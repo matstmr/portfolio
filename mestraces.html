@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mestraces.css">
+    <link rel="icon" href="logo.png">
+    <script src="competence.js"></script>
+
+    <title>Compétences</title>
+</head>
+
+<body>
+    <section>
+        <header class="header" id="header">
+            <nav class="nav">
+                <a href="index.html" class="nav-logo">Matteo Santamaria</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="resume">
+                <p>
+                    Lors de ma formation, j'ai acquis de nombreuses compétences, que ce soit dans le domaine de
+                    l'informatique ou bien dans le domaine de l'électronique. Je vais présenter une de ces compétence ci
+                    dessous avec un exemple de travail réalisé avec une description de ce dernier.
+                </p>
+            </div>
+        </div>
+
+        <div class="trait"></div>
+
+        <div class="traces">
+            <h2 class="titre-competence">Mettre en oeuvre une chaîne de mesure simple, piloter un instrument de façon élémentaire
+            </h2>
+            <div class="competence">
+                <div class="ligne1">
+                    <div class="trace1">
+                        <img src="elec.png" alt="image">
+                    </div>
+                    <div class="trace2">
+                        <img src="ecranLed.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="ligne2">
+                    <div class="trace3">
+                        <img src="trace3.png" alt="image">
+                    </div>
+                    <div class="trace4">
+                        <img src="ventilo.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="ligne3">
+                    <div class="trace5">
+                        <img src="tkinter.png" alt="image">
+                    </div>
+                    <div class="trace6">
+                        <img src="python.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="popup-image1">
+                    <span> &times;</span>
+                    <h2 class="popup-image1-titre">Identifier des couples capteurs selon la mesure demandée</h2>
+                    <img src="elec.png" alt="image">
+                    <p>Sur cette photo, nous pouvons voir un capteur de fréquence cardiaque. Lors de ce travail,je
+                        devais prendre des mesures de fréquence cardiaque et établir un code Arduino pour le faire
+                        fonctionner. Le capteur était connecté à une plaque Arduino </p>
+                </div>
+
+                <div class="popup-image2">
+                    <span> &times;</span>
+                    <h2 class="popup-image2-titre">Acquérir et numériser des signaux analogiques</h2>
+                    <img src="ecranLed.png" alt="">
+                    <p>Pour ce travail, je devais créer un code Arduino pour acquérir les valeurs des capteurs de température et d'éclairement branchés sur la plaque de prototypage. Ensuite, je devais afficher ces valeurs sur l'écran LED lui-même connecter sur la plaque Arduino.
+                    </p>
+                </div>
+
+                <div class="popup-image3">
+                    <span> &times;</span>
+                    <h2 class="popup-image3-titre">Choisir un instrument de mesure adapté au signal</h2>
+                    <img src="trace3.png" alt="">
+                    <p>Ce montage simule un lit d'hôpital, lorsque un poids est exercé sur le capteur de pesée, cela veut dire qu'un patient est sur le lit. Si le capteur de niveau sonore détecte une trop grande sonorité (le patient appelle à l'aide) et que quelqu'un est detécté sur le lit, alors la LED rouge s'active. Le capteur de fréquence cardiaque, permet d'allumer brièvement la LED verte à chaque battements du coeur. </p>
+                </div>
+
+                <div class="popup-image4">
+                    <span> &times;</span>
+                    <h2 class="popup-image4-titre">Traiter avec ou sans régulation un signal analogique</h2>
+                    <img src="ventilo.png" alt="">
+                    <p>Lors de ce TP ( Travaux Pratiques ), je devais réaliser un code Arduino permettant de simuler un espace de culture de végétaux. Le code doit permettre au ventilateur de tourner il y a trop de chaleur captée par le capteur de température, et si et seulement si le capteur de lumière indiqu une valeur élevée, qui correspond au jour et la nuit. Le ventilateur était lui-même branché à une plaque de prototypage et à une plaque Arduino.</p>
+                </div>
+
+                <div class="popup-image5">
+                    <span> &times;</span>
+                    <h2 class="popup-image5-titre">Concevoir un algorithme pour le traitement des données ou le pilotage d'un instrument</h2>
+                    <img src="tkinter.png" alt="">
+                    <p>Grâce à ce code Python, une interface graphique est créée dès lors que le programme s'éxécute. L'utilisateur doit alors renseigner le nom de la région et les dates de début et de fin qu'il souhaite. Avec ces informations, le programme va alors créer un fichier Excel dans lequel toutes les données météo de la région et des dates choisies seront recensées.                  
+                    </p>
+                </div>
+
+                <div class="popup-image6">
+                    <span> &times;</span>
+                    <h2 class="popup-image6-titre">Utiliser un langage de programmation permettant la mise en place d'un algorithme</h2>
+                    <img src="python.png" alt="">
+                    <p>Lors de ce travail, j'ai utilisé le language Python. Ce code permet à l'utilisateur de renseigner une région qu'il souhaite et il va alors créer un fichier avec le nom de la région, permettant à l'utilisateur d'observer les données de la météo de la région souhaitée des années 2018, 2019 et 2020.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        /* POPUP1 */
+        document.querySelectorAll('.trace1').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image1').style.display = 'block';
+                document.querySelector('body').style.overflow = 'hidden';
+            }
+        });
+
+        document.querySelector('.popup-image1 span').onclick = () => {
+            document.querySelector('.popup-image1').style.display = 'none';
+            document.querySelector('body').style.overflow = 'visible';
+        }
+
+        /* POPUP2 */
+
+        document.querySelectorAll('.trace2').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image2').style.display = 'block';
+                document.querySelector('body').style.overflow = 'hidden';
+            }
+        });
+
+        document.querySelector('.popup-image2 span').onclick = () => {
+            document.querySelector('.popup-image2').style.display = 'none';
+            document.querySelector('body').style.overflow = 'visible';
+        }
+
+        /* POPUP3 */
+        document.querySelectorAll('.trace3').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image3').style.display = 'block';
+                document.querySelector('body').style.overflow = 'hidden';
+            }
+        });
+
+        document.querySelector('.popup-image3 span').onclick = () => {
+            document.querySelector('.popup-image3').style.display = 'none';
+            document.querySelector('body').style.overflow = 'visible';
+        }
+
+        /* POPUP4 */
+        document.querySelectorAll('.trace4').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image4').style.display = 'block';
+                document.querySelector('body').style.overflow = 'hidden';
+            }
+        });
+
+        document.querySelector('.popup-image4 span').onclick = () => {
+            document.querySelector('.popup-image4').style.display = 'none';
+            document.querySelector('body').style.overflow = 'visible';
+        }
+
+        /* POPUP5 */
+        document.querySelectorAll('.trace5').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image5').style.display = 'block';
+                document.querySelector('body').style.overflow = 'hidden';
+            }
+        });
+
+        document.querySelector('.popup-image5 span').onclick = () => {
+            document.querySelector('.popup-image5').style.display = 'none';
+            document.querySelector('body').style.overflow = 'visible';
+        }
+
+        /* POPUP6 */
+        document.querySelectorAll('.trace6').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image6').style.display = 'block';
+                document.querySelector('body').style.overflow = 'hidden';
+            }
+        });
+
+        document.querySelector('.popup-image6 span').onclick = () => {
+            document.querySelector('.popup-image6').style.display = 'none';
+            document.querySelector('body').style.overflow = 'visible';
+        }
+    </script>
+</body>
+
+</html>

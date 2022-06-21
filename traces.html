@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <section>
+        <header>
+            <nav>
+                <div class="container">
+    
+                    <h1>Portfolio</h1>
+    
+                    <div class="menu">
+                        <a href="index.html">Mon Profil</a>
+                        <a href="traces.html">Mes traces</a>
+                        <a href="#">Mes projets</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="page">
+            <div class="traces">
+                <div class="toggle1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere labore dolorum
+                    similique. Facere quas eos accusantium sequi maiores fugiat reprehenderit, veniam, nihil dolor natus
+                    vel aspernatur? In nemo laudantium, minus, quae iusto consequatur vel vero ex illo voluptatibus
+                    earum provident maxime. Eos doloremque </div>
+                <div class="toggle1"><img src="image/test.jpg" alt="image" height="50px"><br> <br> ipsum dolor sit amet
+                    consectetur, adipisicing elit. Quod voluptatem tempore illo a beatae incidunt iusto magnam fuga
+                    tenetur minus facere enim quidem sunt, exercitationem et soluta! Est, distinctio sint?</div>
+
+                <div class="toggle2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere labore dolorum
+                    similique. Facere quas eos accusantium sequi maiores fugiat reprehenderit, veniam, nihil dolor natus
+                    vel aspernatur? In nemo laudantium, minus, quae iusto consequatur vel vero ex illo voluptatibus
+                    earum provident maxime. Eos doloremque </div>
+                <div class="toggle2"><img src="image/test.jpg" alt="image" height="50px"><br> <br> ipsum dolor sit amet
+                    consectetur, adipisicing elit. Quod voluptatem tempore illo a beatae incidunt iusto magnam fuga
+                    tenetur minus facere enim quidem sunt, exercitationem et soluta! Est, distinctio sint?</div>
+
+                <div class="toggle3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere labore dolorum
+                    similique. Facere quas eos accusantium sequi maiores fugiat reprehenderit, veniam, nihil dolor natus
+                    vel aspernatur? In nemo laudantium, minus, quae iusto consequatur vel vero ex illo voluptatibus
+                    earum provident maxime. Eos doloremque </div>
+                <div class="toggle3"><img src="image/test.jpg" alt="image" height="50px"><br> <br> ipsum dolor sit amet
+                    consectetur, adipisicing elit. Quod voluptatem tempore illo a beatae incidunt iusto magnam fuga
+                    tenetur minus facere enim quidem sunt, exercitationem et soluta! Est, distinctio sint?</div>
+            </div>
+            <div class="competences">
+                <a id="toggler1" href="#">
+                    <div class="competence">
+                        <h2>Choisir les capteurs ou les détecteurs les mieux adaptés</h2>
+                    </div>
+                </a>
+                <a href="#" id="toggler2">
+                    <div class="competence">
+                        <h2>Mettre en place le pilotage d'une chaîne de mesure avec ou sans régluation</h2>
+                    </div>
+                </a>
+                <a href="#" id="toggler3">
+                    <div class="competence">
+                        <h2>Choisir un transfert et traintement analogique ou numérique du signal adapté</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="titre">
+            <h1>Mettre en oeuvre une chaîne de mesure et d'instrumentation</h1>
+        </div>
+
+
+    </section>
+    <script>
+        /* <![CDATA[ */
+        /*
+        |-----------------------------------------------------------------------
+        |  jQuery Toggle Script by Matt - skyminds.net
+        |-----------------------------------------------------------------------
+        |
+        | Affiche/cache le contenu d'un bloc une fois qu'un lien est cliqué.
+        |
+        */
+
+        // On attend que la page soit chargée 
+        jQuery(document).ready(function () {
+            // On cache la zone de texte
+            jQuery('.toggle1').hide();
+            // toggle() lorsque le lien avec l'ID #toggler est cliqué
+            jQuery('a#toggler1').click(function () {
+                jQuery('.toggle1').toggle(400);
+                return false;
+            });
+        });
+/* ]]> */
+    </script>
+
+    <script>
+        /* <![CDATA[ */
+        /*
+        |-----------------------------------------------------------------------
+        |  jQuery Toggle Script by Matt - skyminds.net
+        |-----------------------------------------------------------------------
+        |
+        | Affiche/cache le contenu d'un bloc une fois qu'un lien est cliqué.
+        |
+        */
+
+        // On attend que la page soit chargée 
+        jQuery(document).ready(function () {
+            // On cache la zone de texte
+            jQuery('.toggle2').hide();
+            // toggle() lorsque le lien avec l'ID #toggler est cliqué
+            jQuery('a#toggler2').click(function () {
+                jQuery('.toggle2').toggle(400);
+                return false;
+            });
+        });
+/* ]]> */
+    </script>
+
+    <script>
+        /* <![CDATA[ */
+        /*
+        |-----------------------------------------------------------------------
+        |  jQuery Toggle Script by Matt - skyminds.net
+        |-----------------------------------------------------------------------
+        |
+        | Affiche/cache le contenu d'un bloc une fois qu'un lien est cliqué.
+        |
+        */
+
+        // On attend que la page soit chargée 
+        jQuery(document).ready(function () {
+            // On cache la zone de texte
+            jQuery('.toggle3').hide();
+            // toggle() lorsque le lien avec l'ID #toggler est cliqué
+            jQuery('a#toggler3').click(function () {
+                jQuery('.toggle3').toggle(400);
+                return false;
+            });
+        });
+/* ]]> */
+    </script>
+</body>
+
+</html>

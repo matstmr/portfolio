@@ -408,6 +408,14 @@ let mousemove31 = false;
 let mousemove21 = false;
 //let mousemove11 = false;
 
+let mousemove82 = false;
+let mousemove72 = false;
+let mousemove62 = false;
+let mousemove52 = false;
+let mousemove42 = false;
+let mousemove32 = false;
+let mousemove22 = false;
+
 let deltaX82;
 let deltaX72;
 let deltaX62;
@@ -426,15 +434,16 @@ elementPage81.addEventListener('mousedown', (e) => {
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
-
+    clearInterval(autoTurnTimer);
+    mousemove81 = true;
 });
 elementPage71.addEventListener('mousedown', (e) => {
     isDragging71 = true;
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    clearInterval(autoTurnTimer);
+    mousemove71 = true;
 
 });
 elementPage61.addEventListener('mousedown', (e) => {
@@ -442,7 +451,8 @@ elementPage61.addEventListener('mousedown', (e) => {
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    clearInterval(autoTurnTimer);
+    mousemove61 = true;
 
 });
 elementPage51.addEventListener('mousedown', (e) => {
@@ -450,7 +460,8 @@ elementPage51.addEventListener('mousedown', (e) => {
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    clearInterval(autoTurnTimer);
+    mousemove51 = true;
 
 });
 elementPage41.addEventListener('mousedown', (e) => {
@@ -458,7 +469,8 @@ elementPage41.addEventListener('mousedown', (e) => {
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    clearInterval(autoTurnTimer);
+    mousemove41 = true;
 
 });
 elementPage31.addEventListener('mousedown', (e) => {
@@ -466,7 +478,8 @@ elementPage31.addEventListener('mousedown', (e) => {
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    clearInterval(autoTurnTimer);
+    mousemove31 = true;
 
 });
 elementPage21.addEventListener('mousedown', (e) => {
@@ -474,7 +487,8 @@ elementPage21.addEventListener('mousedown', (e) => {
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    clearInterval(autoTurnTimer);
+    mousemove21 = true;
 
 });
 /*elementPage11.addEventListener('mousedown', (e) => {
@@ -482,7 +496,7 @@ elementPage21.addEventListener('mousedown', (e) => {
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    clearInterval(autoTurnTimer);
 
 });*/
 
@@ -492,7 +506,8 @@ elementPage82.addEventListener('mousedown', (e) => {
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    clearInterval(autoTurnTimer);
+    mousemove82 = true;
 
 });
 elementPage72.addEventListener('mousedown', (e) => {
@@ -500,31 +515,35 @@ elementPage72.addEventListener('mousedown', (e) => {
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
-
+    clearInterval(autoTurnTimer);
+    mousemove72 = true;
 });
 elementPage62.addEventListener('mousedown', (e) => {
     isDragging62 = true;
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
-
+    clearInterval(autoTurnTimer);
+    mousemove62 = true;
 });
 elementPage52.addEventListener('mousedown', (e) => {
     isDragging52 = true;
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
-    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    clearInterval(autoTurnTimer);
+    mousemove52 = true;
+
 
 });
 elementPage42.addEventListener('mousedown', (e) => {
-    isDragging412 = true;
+    isDragging42 = true;
     initialX = e.clientX;
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
     clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    mousemove42 = true;
+
 
 });
 elementPage32.addEventListener('mousedown', (e) => {
@@ -533,7 +552,7 @@ elementPage32.addEventListener('mousedown', (e) => {
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
     clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
-
+    mousemove32 = true;
 });
 elementPage22.addEventListener('mousedown', (e) => {
     isDragging22 = true;
@@ -541,6 +560,8 @@ elementPage22.addEventListener('mousedown', (e) => {
     deltaX = 0;
     totalDistance = 0; // Garder une trace de la distance totale parcourue
     clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    mousemove22 = true;
+
 
 });
 /*elementPage12.addEventListener('mousedown', (e) => {
@@ -554,7 +575,6 @@ elementPage22.addEventListener('mousedown', (e) => {
 
 document.addEventListener('mousemove', (e) => {
     if (isDragging81) {
-
         const currentX = e.clientX;
         const deltaX = currentX - initialX;
 
@@ -620,503 +640,990 @@ document.addEventListener('mousemove', (e) => {
             elementPage82.style.opacity = 1;
         }
 
-        mousemove81 = true;
         initialX = currentX;
     }
 
+    if (isDragging82) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
+
+        page8.style.transform = 'rotateY(0deg) translateZ(16px) translateX(-329px) translateY(8px)';
+
+        mask81.style.transform = 'translate3d(0, 0px, 0px)';
+        mask82.style.transform = 'translate3d(0, 0px, 0px)';
+
+        mask81.classList.remove('mask');
+        mask82.classList.remove('mask');
+        mask81.classList.add('right-mask-side');
+        mask82.classList.add('right-mask-side');
+
+        elementPage81.classList.remove('right-flip-side');
+        elementPage82.classList.remove('flip-side');
+        elementPage81.classList.add('right-side');
+        elementPage82.classList.add('right-side');
+        elementPage81.style.boxShadow = '20px 0px 30px rgba(40, 40, 40, 0.2)';
+
+        mask81.style.zIndex = 113;
+        mask82.style.zIndex = 90;
+
+        // Mettre à jour la distance totale parcourue
+        totalDistance += deltaX;
+
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
+
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX82 = totalDistance;
+
+        if (deltaX82 > 145) {
+            //page1.style.transform = 'rotateY(0deg) translateZ(10px) translateX(28px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(11px) translateX(26px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(12px) translateX(24px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(13px) translateX(22px) translateY(8px)';
+            page5.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
+            page6.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page7.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+        } else {
+            //page1.style.transform = 'rotateY(0deg) translateZ(10px) translateX(26px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(11px) translateX(24px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(12px) translateX(22px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(13px) translateX(20px) translateY(8px)';
+            page5.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
+            page6.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page7.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        }
+
+        // Appliquer la transformation aux éléments
+        mask81.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+        mask82.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+        elementPage81.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+        elementPage82.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+
+        if (translation <= 10) {
+            elementPage81.style.opacity = 0;
+        } else {
+            elementPage81.style.opacity = 1;
+        }
+
+        initialX = currentX;
+    }
+
+
     if (isDragging71) {
-    const currentX = e.clientX;
-    const deltaX = currentX - initialX;
-    mask71.style.transform = 'translate3d(345px, 0px, 0px)';
-    mask72.style.transform = 'translate3d(345px, 0px, 0px)';
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
+        mask71.style.transform = 'translate3d(345px, 0px, 0px)';
+        mask72.style.transform = 'translate3d(345px, 0px, 0px)';
 
 
-    mask71.classList.remove('right-mask-side');
-    mask72.classList.remove('right-mask-side');
-    mask71.classList.add('mask');
-    mask72.classList.add('mask');
+        mask71.classList.remove('right-mask-side');
+        mask72.classList.remove('right-mask-side');
+        mask71.classList.add('mask');
+        mask72.classList.add('mask');
 
-    elementPage71.classList.remove('right-side');
-    elementPage72.classList.remove('right-side');
-    elementPage71.classList.add('right-flip-side');
-    elementPage72.classList.add('flip-side');
-    elementPage72.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
+        elementPage71.classList.remove('right-side');
+        elementPage72.classList.remove('right-side');
+        elementPage71.classList.add('right-flip-side');
+        elementPage72.classList.add('flip-side');
+        elementPage72.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
 
-    mask71.style.zIndex = 90;
-    mask72.style.zIndex = 113;
+        mask71.style.zIndex = 90;
+        mask72.style.zIndex = 113;
 
-    // Mettre à jour la distance totale parcourue
-    totalDistance -= deltaX;
+        // Mettre à jour la distance totale parcourue
+        totalDistance -= deltaX;
 
-    // Bornes des valeurs
-    const maxTranslation = 345; // La valeur maximale de la translation
-    const minTranslation = 0;  // La valeur minimale de la translation
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
 
-    // Limiter la valeur de la transformation en fonction de la distance totale
-    let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
-    deltaX71 = totalDistance;
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX71 = totalDistance;
 
-    if (deltaX71 > 200) {
-        elementPage82.style.transform = 'translate3d(-347px, 0, 0)';
-        //page1.style.transform = 'rotateY(0deg) translateZ(11px) translateX(24px) translateY(8px)';
-        page2.style.transform = 'rotateY(0deg) translateZ(12px) translateX(22px) translateY(8px)';
-        page3.style.transform = 'rotateY(0deg) translateZ(13px) translateX(20px) translateY(8px)';
-        page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
-        page5.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
-        page6.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
-    } else {
-        elementPage82.style.transform = 'translate3d(-345px, 0, 0)';
-        //page1.style.transform = 'rotateY(0deg) translateZ(11px) translateX(26px) translateY(8px)';
-        page2.style.transform = 'rotateY(0deg) translateZ(12px) translateX(24px) translateY(8px)';
-        page3.style.transform = 'rotateY(0deg) translateZ(13px) translateX(22px) translateY(8px)';
-        page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
-        page5.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
-        page6.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+        if (deltaX71 > 200) {
+            elementPage82.style.transform = 'translate3d(-347px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(11px) translateX(24px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(12px) translateX(22px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(13px) translateX(20px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
+            page5.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page6.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        } else {
+            elementPage82.style.transform = 'translate3d(-345px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(11px) translateX(26px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(12px) translateX(24px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(13px) translateX(22px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
+            page5.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page6.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+        }
+
+
+        // Appliquer la transformation aux éléments
+        mask71.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
+        mask72.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
+        elementPage71.style.transform = `translate3d(${translation}px, 0, 0)`;
+        elementPage72.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage72.style.opacity = 0;
+        } else {
+            elementPage72.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
+    if (isDragging72) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
+        page7.style.transform = 'rotateY(0deg) translateZ(16px) translateX(-331px) translateY(8px)';
 
-    // Appliquer la transformation aux éléments
-    mask71.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
-    mask72.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
-    elementPage71.style.transform = `translate3d(${translation}px, 0, 0)`;
-    elementPage72.style.transform = `translate3d(${-translation}px, 0, 0)`;
+        mask71.style.transform = 'translate3d(0, 0px, 0px)';
+        mask72.style.transform = 'translate3d(0, 0px, 0px)';
 
-    if (translation <= 10) {
-        elementPage72.style.opacity = 0;
-    } else {
-        elementPage72.style.opacity = 1;
+        mask71.classList.remove('mask');
+        mask72.classList.remove('mask');
+        mask71.classList.add('right-mask-side');
+        mask72.classList.add('right-mask-side');
+
+        elementPage71.classList.remove('right-flip-side');
+        elementPage72.classList.remove('flip-side');
+        elementPage71.classList.add('right-side');
+        elementPage72.classList.add('right-side');
+        elementPage71.style.boxShadow = '20px 0px 30px rgba(40, 40, 40, 0.2)';
+
+        mask71.style.zIndex = 113;
+        mask72.style.zIndex = 90;
+
+        // Mettre à jour la distance totale parcourue
+        totalDistance += deltaX;
+
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
+
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX72 = totalDistance;
+
+        if (deltaX72 > 200) {
+            elementPage82.style.transform = 'translate3d(-345px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(11px) translateX(26px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(12px) translateX(24px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(13px) translateX(22px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
+            page5.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page6.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+        } else {
+            elementPage82.style.transform = 'translate3d(-347px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(11px) translateX(24px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(12px) translateX(22px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(13px) translateX(20px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
+            page5.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page6.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        }
+
+
+        // Appliquer la transformation aux éléments
+        mask71.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+        mask72.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+        elementPage71.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+        elementPage72.style.transform = `translate3d(${-translation}px, 0, 0)`;
+        if (translation <= 10) {
+            elementPage71.style.opacity = 0;
+        } else {
+            elementPage71.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
-    mousemove71 = true;
-    initialX = currentX;
-}
-
-if (isDragging61) {
-    const currentX = e.clientX;
-    const deltaX = currentX - initialX;
-    mask61.style.transform = 'translate3d(345px, 0px, 0px)';
-    mask62.style.transform = 'translate3d(345px, 0px, 0px)';
+    if (isDragging61) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
+        mask61.style.transform = 'translate3d(345px, 0px, 0px)';
+        mask62.style.transform = 'translate3d(345px, 0px, 0px)';
 
 
-    mask61.classList.remove('right-mask-side');
-    mask62.classList.remove('right-mask-side');
-    mask61.classList.add('mask');
-    mask62.classList.add('mask');
+        mask61.classList.remove('right-mask-side');
+        mask62.classList.remove('right-mask-side');
+        mask61.classList.add('mask');
+        mask62.classList.add('mask');
 
 
-    elementPage61.classList.remove('right-side');
-    elementPage62.classList.remove('right-side');
-    elementPage61.classList.add('right-flip-side');
-    elementPage62.classList.add('flip-side');
-    elementPage62.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
+        elementPage61.classList.remove('right-side');
+        elementPage62.classList.remove('right-side');
+        elementPage61.classList.add('right-flip-side');
+        elementPage62.classList.add('flip-side');
+        elementPage62.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
 
-    mask61.style.zIndex = 90;
-    mask62.style.zIndex = 113;
+        mask61.style.zIndex = 90;
+        mask62.style.zIndex = 113;
 
-    // Mettre à jour la distance totale parcourue
-    totalDistance -= deltaX;
+        // Mettre à jour la distance totale parcourue
+        totalDistance -= deltaX;
 
-    // Bornes des valeurs
-    const maxTranslation = 345; // La valeur maximale de la translation
-    const minTranslation = 0;  // La valeur minimale de la translation
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
 
-    // Limiter la valeur de la transformation en fonction de la distance totale
-    let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
-    deltaX61 = totalDistance;
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX61 = totalDistance;
 
-    if (deltaX61 > 200) {
-        elementPage82.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-347px, 0, 0)';
-        //page1.style.transform = 'rotateY(0deg) translateZ(12px) translateX(22px) translateY(8px)';
-        page2.style.transform = 'rotateY(0deg) translateZ(13px) translateX(20px) translateY(8px)';
-        page3.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
-        page4.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
-        page5.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        if (deltaX61 > 200) {
+            elementPage82.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-347px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(12px) translateX(22px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(13px) translateX(20px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page5.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
 
-    } else {
-        elementPage82.style.transform = 'translate3d(-347px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-345px, 0, 0)';
-        //page1.style.transform = 'rotateY(0deg) translateZ(12px) translateX(24px) translateY(8px)';
-        page2.style.transform = 'rotateY(0deg) translateZ(13px) translateX(22px) translateY(8px)';
-        page3.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
-        page4.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
-        page5.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+        } else {
+            elementPage82.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-345px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(12px) translateX(24px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(13px) translateX(22px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page5.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
 
+        }
+
+
+        // Appliquer la transformation aux éléments
+        mask61.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
+        mask62.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
+        elementPage61.style.transform = `translate3d(${translation}px, 0, 0)`;
+        elementPage62.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage62.style.opacity = 0;
+        } else {
+            elementPage62.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
+    if (isDragging62) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
+       
+        page6.style.transform = 'rotateY(0deg) translateZ(18px) translateX(-333px) translateY(8px)';
 
-    // Appliquer la transformation aux éléments
-    mask61.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
-    mask62.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
-    elementPage61.style.transform = `translate3d(${translation}px, 0, 0)`;
-    elementPage62.style.transform = `translate3d(${-translation}px, 0, 0)`;
+        mask61.style.transform = 'translate3d(0, 0px, 0px)';
+        mask62.style.transform = 'translate3d(0, 0px, 0px)';
 
-    if (translation <= 10) {
-        elementPage62.style.opacity = 0;
-    } else {
-        elementPage62.style.opacity = 1;
+        mask61.classList.remove('mask');
+        mask62.classList.remove('mask');
+        mask61.classList.add('right-mask-side');
+        mask62.classList.add('right-mask-side');
+
+        elementPage61.classList.remove('right-flip-side');
+        elementPage62.classList.remove('flip-side');
+        elementPage61.classList.add('right-side');
+        elementPage62.classList.add('right-side');
+        elementPage61.style.boxShadow = '20px 0px 30px rgba(40, 40, 40, 0.2)';
+
+        mask61.style.zIndex = 113;
+        mask62.style.zIndex = 90;
+
+
+        // Mettre à jour la distance totale parcourue
+        totalDistance += deltaX;
+
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
+
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX62 = totalDistance;
+
+        if (deltaX62 > 200) {
+            elementPage82.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-345px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(12px) translateX(24px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(13px) translateX(22px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page5.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+
+
+        } else {
+            elementPage82.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-347px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(12px) translateX(22px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(13px) translateX(20px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page5.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        }
+
+
+        // Appliquer la transformation aux éléments
+        mask61.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+        mask62.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+        elementPage61.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+        elementPage62.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage61.style.opacity = 0;
+        } else {
+            elementPage61.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
-    mousemove61 = true;
-    initialX = currentX;
-}
-
-if (isDragging51) {
-    const currentX = e.clientX;
-    const deltaX = currentX - initialX;
-    mask51.style.transform = 'translate3d(345px, 0px, 0px)';
-    mask52.style.transform = 'translate3d(345px, 0px, 0px)';
+    if (isDragging51) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
+        mask51.style.transform = 'translate3d(345px, 0px, 0px)';
+        mask52.style.transform = 'translate3d(345px, 0px, 0px)';
 
 
-    mask51.classList.remove('right-mask-side');
-    mask52.classList.remove('right-mask-side');
-    mask51.classList.add('mask');
-    mask52.classList.add('mask');
+        mask51.classList.remove('right-mask-side');
+        mask52.classList.remove('right-mask-side');
+        mask51.classList.add('mask');
+        mask52.classList.add('mask');
 
 
-    elementPage51.classList.remove('right-side');
-    elementPage52.classList.remove('right-side');
-    elementPage51.classList.add('right-flip-side');
-    elementPage52.classList.add('flip-side');
-    elementPage52.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
+        elementPage51.classList.remove('right-side');
+        elementPage52.classList.remove('right-side');
+        elementPage51.classList.add('right-flip-side');
+        elementPage52.classList.add('flip-side');
+        elementPage52.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
 
-    mask51.style.zIndex = 90;
-    mask52.style.zIndex = 113;
+        mask51.style.zIndex = 90;
+        mask52.style.zIndex = 113;
 
-    // Mettre à jour la distance totale parcourue
-    totalDistance -= deltaX;
+        // Mettre à jour la distance totale parcourue
+        totalDistance -= deltaX;
 
-    // Bornes des valeurs
-    const maxTranslation = 345; // La valeur maximale de la translation
-    const minTranslation = 0;  // La valeur minimale de la translation
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
 
-    // Limiter la valeur de la transformation en fonction de la distance totale
-    let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
-    deltaX51 = totalDistance;
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX51 = totalDistance;
 
-    if (deltaX51 > 200) {
-        elementPage82.style.transform = 'translate3d(-351px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage62.style.transform = 'translate3d(-347px, 0, 0)';
+        if (deltaX51 > 200) {
+            elementPage82.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-347px, 0, 0)';
 
-        //page1.style.transform = 'rotateY(0deg) translateZ(13px) translateX(20px) translateY(8px)';
-        page2.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
-        page3.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
-        page4.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
-    } else {
-        elementPage82.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-347px, 0, 0)';
-        elementPage62.style.transform = 'translate3d(-345px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(13px) translateX(20px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        } else {
+            elementPage82.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-345px, 0, 0)';
 
-        //page1.style.transform = 'rotateY(0deg) translateZ(13px) translateX(22px) translateY(8px)';
-        page2.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
-        page3.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
-        page4.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(13px) translateX(22px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+        }
+
+
+        // Appliquer la transformation aux éléments
+        mask51.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
+        mask52.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
+        elementPage51.style.transform = `translate3d(${translation}px, 0, 0)`;
+        elementPage52.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage52.style.opacity = 0;
+        } else {
+            elementPage52.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
+    if (isDragging52) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
 
-    // Appliquer la transformation aux éléments
-    mask51.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
-    mask52.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
-    elementPage51.style.transform = `translate3d(${translation}px, 0, 0)`;
-    elementPage52.style.transform = `translate3d(${-translation}px, 0, 0)`;
+        page5.style.transform = 'rotateY(0deg) translateZ(16px) translateX(-335px) translateY(8px)';
 
-    if (translation <= 10) {
-        elementPage52.style.opacity = 0;
-    } else {
-        elementPage52.style.opacity = 1;
+        mask51.style.transform = 'translate3d(0, 0px, 0px)';
+        mask52.style.transform = 'translate3d(0, 0px, 0px)';
+
+        mask51.classList.remove('mask');
+        mask52.classList.remove('mask');
+        mask51.classList.add('right-mask-side');
+        mask52.classList.add('right-mask-side');
+
+        elementPage51.classList.remove('right-flip-side');
+        elementPage52.classList.remove('flip-side');
+        elementPage51.classList.add('right-side');
+        elementPage52.classList.add('right-side');
+        elementPage51.style.boxShadow = '20px 0px 30px rgba(40, 40, 40, 0.2)';
+
+        mask51.style.zIndex = 113;
+        mask52.style.zIndex = 90;
+
+        // Mettre à jour la distance totale parcourue
+        totalDistance += deltaX;
+
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
+
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX52 = totalDistance;
+
+        if (deltaX52 > 200) {
+            elementPage82.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-345px, 0, 0)';
+
+            //page1.style.transform = 'rotateY(0deg) translateZ(13px) translateX(22px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+
+        } else {
+            elementPage82.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-347px, 0, 0)';
+
+            //page1.style.transform = 'rotateY(0deg) translateZ(13px) translateX(20px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page4.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        }
+
+
+        // Appliquer la transformation aux éléments
+        mask51.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+        mask52.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+        elementPage51.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+        elementPage52.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage51.style.opacity = 0;
+        } else {
+            elementPage51.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
-    mousemove51 = true;
-    initialX = currentX;
-}
-
-if (isDragging41) {
-    const currentX = e.clientX;
-    const deltaX = currentX - initialX;
-    mask41.style.transform = 'translate3d(345px, 0px, 0px)';
-    mask42.style.transform = 'translate3d(345px, 0px, 0px)';
+    if (isDragging41) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
+        mask41.style.transform = 'translate3d(345px, 0px, 0px)';
+        mask42.style.transform = 'translate3d(345px, 0px, 0px)';
 
 
-    mask41.classList.remove('right-mask-side');
-    mask42.classList.remove('right-mask-side');
-    mask41.classList.add('mask');
-    mask42.classList.add('mask');
+        mask41.classList.remove('right-mask-side');
+        mask42.classList.remove('right-mask-side');
+        mask41.classList.add('mask');
+        mask42.classList.add('mask');
 
 
-    elementPage41.classList.remove('right-side');
-    elementPage42.classList.remove('right-side');
-    elementPage41.classList.add('right-flip-side');
-    elementPage42.classList.add('flip-side');
-    elementPage42.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
+        elementPage41.classList.remove('right-side');
+        elementPage42.classList.remove('right-side');
+        elementPage41.classList.add('right-flip-side');
+        elementPage42.classList.add('flip-side');
+        elementPage42.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
 
-    mask41.style.zIndex = 90;
-    mask42.style.zIndex = 113;
+        mask41.style.zIndex = 90;
+        mask42.style.zIndex = 113;
 
-    // Mettre à jour la distance totale parcourue
-    totalDistance -= deltaX;
+        // Mettre à jour la distance totale parcourue
+        totalDistance -= deltaX;
 
-    // Bornes des valeurs
-    const maxTranslation = 345; // La valeur maximale de la translation
-    const minTranslation = 0;  // La valeur minimale de la translation
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
 
-    // Limiter la valeur de la transformation en fonction de la distance totale
-    let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
-    deltaX41 = totalDistance;
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX41 = totalDistance;
 
-    if (deltaX41 > 200) {
-        elementPage82.style.transform = 'translate3d(-353px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-351px, 0, 0)';
-        elementPage62.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage52.style.transform = 'translate3d(-347px, 0, 0)';
+        if (deltaX41 > 200) {
+            elementPage82.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-347px, 0, 0)';
 
-        //page1.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
-        page2.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
-        page3.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
-    } else {
-        elementPage82.style.transform = 'translate3d(-351px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage62.style.transform = 'translate3d(-347px, 0, 0)';
-        elementPage52.style.transform = 'translate3d(-345px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        } else {
+            elementPage82.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-345px, 0, 0)';
 
-        //page1.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
-        page2.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
-        page3.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+        }
+
+
+        // Appliquer la transformation aux éléments
+        mask41.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
+        mask42.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
+        elementPage41.style.transform = `translate3d(${translation}px, 0, 0)`;
+        elementPage42.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage42.style.opacity = 0;
+        } else {
+            elementPage42.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
+    if (isDragging42) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
 
-    // Appliquer la transformation aux éléments
-    mask41.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
-    mask42.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
-    elementPage41.style.transform = `translate3d(${translation}px, 0, 0)`;
-    elementPage42.style.transform = `translate3d(${-translation}px, 0, 0)`;
+        page4.style.transform = 'rotateY(0deg) translateZ(16px) translateX(-337px) translateY(8px)';
 
-    if (translation <= 10) {
-        elementPage42.style.opacity = 0;
-    } else {
-        elementPage42.style.opacity = 1;
+        mask41.style.transform = 'translate3d(0, 0px, 0px)';
+        mask42.style.transform = 'translate3d(0, 0px, 0px)';
+
+        mask41.classList.remove('mask');
+        mask42.classList.remove('mask');
+        mask41.classList.add('right-mask-side');
+        mask42.classList.add('right-mask-side');
+
+        elementPage41.classList.remove('right-flip-side');
+        elementPage42.classList.remove('flip-side');
+        elementPage41.classList.add('right-side');
+        elementPage42.classList.add('right-side');
+        elementPage41.style.boxShadow = '20px 0px 30px rgba(40, 40, 40, 0.2)';
+
+        mask41.style.zIndex = 113;
+        mask42.style.zIndex = 90;
+
+        // Mettre à jour la distance totale parcourue
+        totalDistance += deltaX;
+
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
+
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX42 = totalDistance;
+
+        if (deltaX42 > 200) {
+            elementPage82.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-345px, 0, 0)';
+
+            //page1.style.transform = 'rotateY(0deg) translateZ(14px) translateX(20px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+
+        } else {
+            elementPage82.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-347px, 0, 0)';
+
+            //page1.style.transform = 'rotateY(0deg) translateZ(14px) translateX(18px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page3.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        }
+
+
+        // Appliquer la transformation aux éléments
+        mask41.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+        mask42.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+        elementPage41.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+        elementPage42.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage41.style.opacity = 0;
+        } else {
+            elementPage41.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
-    mousemove41 = true;
-    initialX = currentX;
-}
-
-if (isDragging31) {
-    const currentX = e.clientX;
-    const deltaX = currentX - initialX;
-    mask31.style.transform = 'translate3d(345px, 0px, 0px)';
-    mask32.style.transform = 'translate3d(345px, 0px, 0px)';
+    if (isDragging31) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
+        mask31.style.transform = 'translate3d(345px, 0px, 0px)';
+        mask32.style.transform = 'translate3d(345px, 0px, 0px)';
 
 
-    mask31.classList.remove('right-mask-side');
-    mask32.classList.remove('right-mask-side');
-    mask31.classList.add('mask');
-    mask32.classList.add('mask');
+        mask31.classList.remove('right-mask-side');
+        mask32.classList.remove('right-mask-side');
+        mask31.classList.add('mask');
+        mask32.classList.add('mask');
 
 
-    elementPage31.classList.remove('right-side');
-    elementPage32.classList.remove('right-side');
-    elementPage31.classList.add('right-flip-side');
-    elementPage32.classList.add('flip-side');
-    elementPage32.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
+        elementPage31.classList.remove('right-side');
+        elementPage32.classList.remove('right-side');
+        elementPage31.classList.add('right-flip-side');
+        elementPage32.classList.add('flip-side');
+        elementPage32.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
 
-    mask31.style.zIndex = 90;
-    mask32.style.zIndex = 113;
+        mask31.style.zIndex = 90;
+        mask32.style.zIndex = 113;
 
-    // Mettre à jour la distance totale parcourue
-    totalDistance -= deltaX;
+        // Mettre à jour la distance totale parcourue
+        totalDistance -= deltaX;
 
-    // Bornes des valeurs
-    const maxTranslation = 345; // La valeur maximale de la translation
-    const minTranslation = 0;  // La valeur minimale de la translation
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
 
-    // Limiter la valeur de la transformation en fonction de la distance totale
-    let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
-    deltaX31 = totalDistance;
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX31 = totalDistance;
 
-    if (deltaX31 > 200) {
-        elementPage82.style.transform = 'translate3d(-355px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-353px, 0, 0)';
-        elementPage62.style.transform = 'translate3d(-351px, 0, 0)';
-        elementPage52.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage42.style.transform = 'translate3d(-347px, 0, 0)';
+        if (deltaX31 > 200) {
+            elementPage82.style.transform = 'translate3d(-355px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage42.style.transform = 'translate3d(-347px, 0, 0)';
 
-        //page1.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
-        page2.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
-    } else {
-        elementPage82.style.transform = 'translate3d(-353px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-351px, 0, 0)';
-        elementPage62.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage52.style.transform = 'translate3d(-347px, 0, 0)';
-        elementPage42.style.transform = 'translate3d(-345px, 0, 0)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        } else {
+            elementPage82.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage42.style.transform = 'translate3d(-345px, 0, 0)';
 
-        //page1.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
-        page2.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+        }
+
+
+        // Appliquer la transformation aux éléments
+        mask31.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
+        mask32.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
+        elementPage31.style.transform = `translate3d(${translation}px, 0, 0)`;
+        elementPage32.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage32.style.opacity = 0;
+        } else {
+            elementPage32.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
+    if (isDragging32) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
 
-    // Appliquer la transformation aux éléments
-    mask31.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
-    mask32.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
-    elementPage31.style.transform = `translate3d(${translation}px, 0, 0)`;
-    elementPage32.style.transform = `translate3d(${-translation}px, 0, 0)`;
+        page3.style.transform = 'rotateY(0deg) translateZ(16px) translateX(-339px) translateY(8px)';
 
-    if (translation <= 10) {
-        elementPage32.style.opacity = 0;
-    } else {
-        elementPage32.style.opacity = 1;
+        mask31.style.transform = 'translate3d(0, 0px, 0px)';
+        mask32.style.transform = 'translate3d(0, 0px, 0px)';
+
+        mask31.classList.remove('mask');
+        mask32.classList.remove('mask');
+        mask31.classList.add('right-mask-side');
+        mask32.classList.add('right-mask-side');
+
+        elementPage31.classList.remove('right-flip-side');
+        elementPage32.classList.remove('flip-side');
+        elementPage31.classList.add('right-side');
+        elementPage32.classList.add('right-side');
+        elementPage31.style.boxShadow = '20px 0px 30px rgba(40, 40, 40, 0.2)';
+
+        mask31.style.zIndex = 113;
+        mask32.style.zIndex = 90;
+
+        // Mettre à jour la distance totale parcourue
+        totalDistance += deltaX;
+
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
+
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX32 = totalDistance;
+
+        if (deltaX32 > 200) {
+            elementPage82.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage42.style.transform = 'translate3d(-345px, 0, 0)';
+
+            //page1.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+
+        } else {
+            elementPage82.style.transform = 'translate3d(-355px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage42.style.transform = 'translate3d(-347px, 0, 0)';
+
+            //page1.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
+            page2.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        }
+
+        // Appliquer la transformation aux éléments
+        mask31.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+        mask32.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+        elementPage31.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+        elementPage32.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage31.style.opacity = 0;
+        } else {
+            elementPage31.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
-    mousemove31 = true;
-    initialX = currentX;
-}
-
-if (isDragging21) {
-    const currentX = e.clientX;
-    const deltaX = currentX - initialX;
-    mask21.style.transform = 'translate3d(345px, 0px, 0px)';
-    mask22.style.transform = 'translate3d(345px, 0px, 0px)';
+    if (isDragging21) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
+        mask21.style.transform = 'translate3d(345px, 0px, 0px)';
+        mask22.style.transform = 'translate3d(345px, 0px, 0px)';
 
 
-    mask21.classList.remove('right-mask-side');
-    mask22.classList.remove('right-mask-side');
-    mask21.classList.add('mask');
-    mask22.classList.add('mask');
+        mask21.classList.remove('right-mask-side');
+        mask22.classList.remove('right-mask-side');
+        mask21.classList.add('mask');
+        mask22.classList.add('mask');
 
 
-    elementPage21.classList.remove('right-side');
-    elementPage22.classList.remove('right-side');
-    elementPage21.classList.add('right-flip-side');
-    elementPage22.classList.add('flip-side');
-    elementPage22.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
+        elementPage21.classList.remove('right-side');
+        elementPage22.classList.remove('right-side');
+        elementPage21.classList.add('right-flip-side');
+        elementPage22.classList.add('flip-side');
+        elementPage22.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
 
-    mask21.style.zIndex = 90;
-    mask22.style.zIndex = 113;
+        mask21.style.zIndex = 90;
+        mask22.style.zIndex = 113;
 
-    // Mettre à jour la distance totale parcourue
-    totalDistance -= deltaX;
+        // Mettre à jour la distance totale parcourue
+        totalDistance -= deltaX;
 
-    // Bornes des valeurs
-    const maxTranslation = 345; // La valeur maximale de la translation
-    const minTranslation = 0;  // La valeur minimale de la translation
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
 
-    // Limiter la valeur de la transformation en fonction de la distance totale
-    let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
-    deltaX21 = totalDistance;
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX21 = totalDistance;
 
-    if (deltaX21 > 200) {
-        elementPage82.style.transform = 'translate3d(-357px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-355px, 0, 0)';
-        elementPage62.style.transform = 'translate3d(-353px, 0, 0)';
-        elementPage52.style.transform = 'translate3d(-351px, 0, 0)';
-        elementPage42.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage32.style.transform = 'translate3d(-347px, 0, 0)';
+        if (deltaX21 > 200) {
+            elementPage82.style.transform = 'translate3d(-357px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-355px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage42.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage32.style.transform = 'translate3d(-347px, 0, 0)';
 
-        //page1.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
 
-    } else {
-        elementPage82.style.transform = 'translate3d(-355px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-353px, 0, 0)';
-        elementPage62.style.transform = 'translate3d(-351px, 0, 0)';
-        elementPage52.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage42.style.transform = 'translate3d(-347px, 0, 0)';
-        elementPage32.style.transform = 'translate3d(-345px, 0, 0)';
+        } else {
+            elementPage82.style.transform = 'translate3d(-355px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage42.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage32.style.transform = 'translate3d(-345px, 0, 0)';
 
-        //page1.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+            //page1.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
 
+        }
+
+
+        // Appliquer la transformation aux éléments
+        mask21.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
+        mask22.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
+        elementPage21.style.transform = `translate3d(${translation}px, 0, 0)`;
+        elementPage22.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage22.style.opacity = 0;
+        } else {
+            elementPage22.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
 
+    if (isDragging22) {
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
 
-    // Appliquer la transformation aux éléments
-    mask21.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
-    mask22.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
-    elementPage21.style.transform = `translate3d(${translation}px, 0, 0)`;
-    elementPage22.style.transform = `translate3d(${-translation}px, 0, 0)`;
+        page2.style.transform = 'rotateY(0deg) translateZ(16px) translateX(-341px) translateY(8px)';
 
-    if (translation <= 10) {
-        elementPage22.style.opacity = 0;
-    } else {
-        elementPage22.style.opacity = 1;
+        mask21.style.transform = 'translate3d(0, 0px, 0px)';
+        mask22.style.transform = 'translate3d(0, 0px, 0px)';
+
+        mask21.classList.remove('mask');
+        mask22.classList.remove('mask');
+        mask21.classList.add('right-mask-side');
+        mask22.classList.add('right-mask-side');
+
+        elementPage21.classList.remove('right-flip-side');
+        elementPage22.classList.remove('flip-side');
+        elementPage21.classList.add('right-side');
+        elementPage22.classList.add('right-side');
+        elementPage21.style.boxShadow = '20px 0px 30px rgba(40, 40, 40, 0.2)';
+
+        mask21.style.zIndex = 113;
+        mask22.style.zIndex = 90;
+
+        // Mettre à jour la distance totale parcourue
+        totalDistance += deltaX;
+
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
+
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX22 = totalDistance;
+
+        if (deltaX22 > 200) {
+            elementPage82.style.transform = 'translate3d(-355px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage42.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage32.style.transform = 'translate3d(-345px, 0, 0)';
+
+            //page1.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
+        } else {
+            elementPage82.style.transform = 'translate3d(-357px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-355px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage42.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage32.style.transform = 'translate3d(-347px, 0, 0)';
+
+            //page1.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+        }
+
+        // Appliquer la transformation aux éléments
+        mask21.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+        mask22.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+        elementPage21.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+        elementPage22.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+        if (translation <= 10) {
+            elementPage21.style.opacity = 0;
+        } else {
+            elementPage21.style.opacity = 1;
+        }
+
+        initialX = currentX;
     }
-
-    mousemove21 = true;
-    initialX = currentX;
-}
-
-/*if (isDragging11) {
-    page1.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
-    const currentX = e.clientX;
-    const deltaX = currentX - initialX;
-    mask11.style.transform = 'translate3d(345px, 0px, 0px)';
-    mask12.style.transform = 'translate3d(345px, 0px, 0px)';
-
-
-    mask11.classList.remove('right-mask-side');
-    mask12.classList.remove('right-mask-side');
-    mask11.classList.add('mask');
-    mask12.classList.add('mask');
-
-
-    elementPage11.classList.remove('right-side');
-    elementPage12.classList.remove('right-side');
-    elementPage11.classList.add('right-flip-side');
-    elementPage12.classList.add('flip-side');
-    elementPage12.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
-
-    mask11.style.zIndex = 90;
-    mask12.style.zIndex = 113;
-
-    // Mettre à jour la distance totale parcourue
-    totalDistance -= deltaX;
-
-    // Bornes des valeurs
-    const maxTranslation = 345; // La valeur maximale de la translation
-    const minTranslation = 0;  // La valeur minimale de la translation
-
-    // Limiter la valeur de la transformation en fonction de la distance totale
-    let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
-    deltaX11 = totalDistance;
-
-    if (deltaX11 > 200) {
-        elementPage82.style.transform = 'translate3d(-359px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-357px, 0, 0)';
-        elementPage62.style.transform = 'translate3d(-355px, 0, 0)';
-        elementPage52.style.transform = 'translate3d(-353px, 0, 0)';
-        elementPage42.style.transform = 'translate3d(-351px, 0, 0)';
-        elementPage32.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage22.style.transform = 'translate3d(-347px, 0, 0)';
-    } else {
-        elementPage82.style.transform = 'translate3d(-357px, 0, 0)';
-        elementPage72.style.transform = 'translate3d(-355px, 0, 0)';
-        elementPage62.style.transform = 'translate3d(-353px, 0, 0)';
-        elementPage52.style.transform = 'translate3d(-351px, 0, 0)';
-        elementPage42.style.transform = 'translate3d(-349px, 0, 0)';
-        elementPage32.style.transform = 'translate3d(-347px, 0, 0)';
-        elementPage22.style.transform = 'translate3d(-345px, 0, 0)';
-    }
-
-
-    // Appliquer la transformation aux éléments
-    mask11.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
-    mask12.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
-    elementPage11.style.transform = `translate3d(${translation}px, 0, 0)`;
-    elementPage12.style.transform = `translate3d(${-translation}px, 0, 0)`;
-
-    if (translation <= 10) {
-        elementPage12.style.opacity = 0;
-    } else {
-        elementPage12.style.opacity = 1;
-    }
-
-    mousemove11 = true;
-    initialX = currentX;
-}*/
+    /*if (isDragging11) {
+        page1.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
+        const currentX = e.clientX;
+        const deltaX = currentX - initialX;
+        mask11.style.transform = 'translate3d(345px, 0px, 0px)';
+        mask12.style.transform = 'translate3d(345px, 0px, 0px)';
+    
+    
+        mask11.classList.remove('right-mask-side');
+        mask12.classList.remove('right-mask-side');
+        mask11.classList.add('mask');
+        mask12.classList.add('mask');
+    
+    
+        elementPage11.classList.remove('right-side');
+        elementPage12.classList.remove('right-side');
+        elementPage11.classList.add('right-flip-side');
+        elementPage12.classList.add('flip-side');
+        elementPage12.style.boxShadow = '-20px 0px 30px rgba(40, 40, 40, 0.2)';
+    
+        mask11.style.zIndex = 90;
+        mask12.style.zIndex = 113;
+    
+        // Mettre à jour la distance totale parcourue
+        totalDistance -= deltaX;
+    
+        // Bornes des valeurs
+        const maxTranslation = 345; // La valeur maximale de la translation
+        const minTranslation = 0;  // La valeur minimale de la translation
+    
+        // Limiter la valeur de la transformation en fonction de la distance totale
+        let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+        deltaX11 = totalDistance;
+    
+        if (deltaX11 > 200) {
+            elementPage82.style.transform = 'translate3d(-359px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-357px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-355px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage42.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage32.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage22.style.transform = 'translate3d(-347px, 0, 0)';
+        } else {
+            elementPage82.style.transform = 'translate3d(-357px, 0, 0)';
+            elementPage72.style.transform = 'translate3d(-355px, 0, 0)';
+            elementPage62.style.transform = 'translate3d(-353px, 0, 0)';
+            elementPage52.style.transform = 'translate3d(-351px, 0, 0)';
+            elementPage42.style.transform = 'translate3d(-349px, 0, 0)';
+            elementPage32.style.transform = 'translate3d(-347px, 0, 0)';
+            elementPage22.style.transform = 'translate3d(-345px, 0, 0)';
+        }
+    
+    
+        // Appliquer la transformation aux éléments
+        mask11.style.transform = `translate3d(${maxTranslation - translation}px, 0, 0)`;
+        mask12.style.transform = `translate3d(${maxTranslation - (translation - 10)}px, 0, 0)`;
+        elementPage11.style.transform = `translate3d(${translation}px, 0, 0)`;
+        elementPage12.style.transform = `translate3d(${-translation}px, 0, 0)`;
+    
+        if (translation <= 10) {
+            elementPage12.style.opacity = 0;
+        } else {
+            elementPage12.style.opacity = 1;
+        }
+    
+        mousemove11 = true;
+        initialX = currentX;
+    }*/
 })
 
 
 document.addEventListener('mouseup', () => {
-    if (isDragging81 && mousemove81) {
+    if (isDragging81 && mousemove81 && elementPage81.classList.contains('right-flip-side')) {
         isDragging81 = false;
+        mousemove81 = false;
         if (deltaX81 > 150) {
             // Start the auto-turn timer
             autoTurnTimer = setInterval(() => {
@@ -1124,7 +1631,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance += 4;
+                totalDistance += 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1140,7 +1647,6 @@ document.addEventListener('mouseup', () => {
                 if (totalDistance >= 345) {
                     ombre71.style.display = 'none';
                     clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
-                    console.log(isDragging81);
                     elementPage82.style.zIndex = 1;
                     elementPage81.style.zIndex = 10;
                     mask82.style.zIndex = 1;
@@ -1160,7 +1666,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance -= 4;
+                totalDistance -= 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1175,6 +1681,18 @@ document.addEventListener('mouseup', () => {
 
                 // Check if the total distance exceeds a certain value (adjust as needed)
                 if (totalDistance <= -345) {
+                    mask81.classList.add('right-mask-side');
+                    mask82.classList.add('right-mask-side');
+                    mask81.classList.remove('mask');
+                    mask82.classList.remove('mask');
+
+
+                    elementPage81.classList.add('right-side');
+                    elementPage82.classList.add('right-side');
+                    elementPage81.classList.remove('right-flip-side');
+                    elementPage82.classList.remove('flip-side');
+                    mask81.style.transform = `translate3d(0px, 0, 0)`;
+                    mask82.style.transform = `translate3d(0px, 0, 0)`;
                     clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
                     deltaX = 0;
                     mask82.style.zIndex = 1;
@@ -1183,10 +1701,97 @@ document.addEventListener('mouseup', () => {
                 }
             }, 10);
         }
+    } else if (isDragging81 && mousemove81 && elementPage81.classList.contains('right-side')) {
+        isDragging81 = false;
+        mousemove81 = false;
     }
 
-    if (isDragging71 && mousemove71) {
+    if (isDragging82 && mousemove82 && elementPage82.classList.contains('right-side')) {
+        isDragging82 = false;
+        mousemove82 = false;
+        if (deltaX82 > 150) {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance += 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask81.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask82.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage81.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage82.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance >= 345) {
+                    ombre71.style.display = 'none';
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    elementPage82.style.zIndex = 1;
+                    elementPage81.style.zIndex = 10;
+                    mask82.style.zIndex = 1;
+                    mask81.style.zIndex = 10;
+                    page8.style.transform = 'rotateY(0deg) translateZ(18px) translateX(14px) translateY(8px)';
+                    mask81.style.transform = 'translate3d(0px, 0, 0) translateX(0px)';
+                    elementPage81.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                    elementPage82.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                }
+            }, 10);
+        } else {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                page8.style.transform = 'rotateY(0deg) translateZ(10px) translateX(-329px) translateY(8px)';
+
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance -= 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask81.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask82.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage81.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage82.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+
+                // Your existing code for manual page turning
+                // ...
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance <= 0) {
+                    mask81.classList.remove('mask');
+                    mask82.classList.remove('mask');
+                    mask81.classList.add('right-mask-side');
+                    mask82.classList.add('right-mask-side');
+
+                    elementPage81.classList.remove('right-flip-side');
+                    elementPage82.classList.remove('flip-side');
+                    elementPage81.classList.add('right-side');
+                    elementPage82.classList.add('right-side');
+                    mask81.style.transform = `translate3d(0px, 0, 0)`;
+                    mask82.style.transform = `translate3d(10px, 0px, 0px)`;
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    deltaX = 0;
+                    mask82.style.zIndex = 10;
+                    mask81.style.zIndex = 1;
+                    totalDistance = 0; // Garder une trace de la distance totale parcourue                        
+                }
+            }, 10);
+        }
+    } else if (isDragging82 && mousemove82 && elementPage82.classList.contains('right-flip-side')) {
+        isDragging82 = false;
+        mousemove82 = false;
+    }
+
+    if (isDragging71 && mousemove71 && elementPage71.classList.contains('right-flip-side')) {
         isDragging71 = false;
+        mousemove71 = false;
         if (deltaX71 > 150) {
             setTimeout(() => {
                 objectifKarma.classList.add('fade-in');
@@ -1204,7 +1809,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance += 4;
+                totalDistance += 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1239,7 +1844,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance -= 4;
+                totalDistance -= 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1253,18 +1858,119 @@ document.addEventListener('mouseup', () => {
 
                 // Check if the total distance exceeds a certain value (adjust as needed)
                 if (totalDistance <= -345) {
+                    mask71.classList.add('right-mask-side');
+                    mask72.classList.add('right-mask-side');
+                    mask71.classList.remove('mask');
+                    mask72.classList.remove('mask');
+
+
+                    elementPage71.classList.add('right-side');
+                    elementPage72.classList.add('right-side');
+                    elementPage71.classList.remove('right-flip-side');
+                    elementPage72.classList.remove('flip-side');
+                    mask71.style.transform = `translate3d(0px, 0, 0)`;
+                    mask72.style.transform = `translate3d(0px, 0, 0)`;
                     clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
                     deltaX = 0;
                     mask72.style.zIndex = 1;
-                    mask71.style.zIndex = 1;
+                    mask71.style.zIndex = 10;
                     totalDistance = 0; // Garder une trace de la distance totale parcourue                        
                 }
             }, 10);
         }
 
+    } else if (isDragging71 && mousemove71 && elementPage71.classList.contains('right-side')) {
+        isDragging71 = false;
+        mousemove71 = false;
     }
-    if (isDragging61 && mousemove61) {
+
+    if (isDragging72 && mousemove72 && elementPage72.classList.contains('right-side')) {
+        isDragging72 = false;
+        mousemove72 = false;
+        if (deltaX72 > 150) {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance += 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask71.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask72.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage71.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage72.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance >= 345) {
+                    ombre61.style.display = 'none';
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    elementPage72.style.zIndex = 1;
+                    elementPage71.style.zIndex = 10;
+                    mask72.style.zIndex = 1;
+                    mask71.style.zIndex = 10;
+                    page7.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+                    mask71.style.transform = 'translate3d(0px, 0, 0) translateX(0px)';
+                    elementPage71.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                    elementPage72.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                }
+            }, 10);
+        } else {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                page7.style.transform = 'rotateY(0deg) translateZ(11px) translateX(-331px) translateY(8px)';
+
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance -= 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask71.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask72.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage71.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage72.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+
+                // Your existing code for manual page turning
+                // ...
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance <= 0) {
+                    mask71.classList.remove('mask');
+                    mask72.classList.remove('mask');
+                    mask71.classList.add('right-mask-side');
+                    mask72.classList.add('right-mask-side');
+
+                    elementPage71.classList.remove('right-flip-side');
+                    elementPage72.classList.remove('flip-side');
+                    elementPage71.classList.add('right-side');
+                    elementPage72.classList.add('right-side');
+                    mask71.style.transform = `translate3d(0px, 0, 0)`;
+                    mask72.style.transform = `translate3d(10px, 0px, 0px)`;
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    deltaX = 0;
+                    mask72.style.zIndex = 10;
+                    mask71.style.zIndex = 1;
+                    totalDistance = 0; // Garder une trace de la distance totale parcourue                        
+                }
+            }, 10);
+        }
+    } else if (isDragging72 && mousemove72 && elementPage72.classList.contains('right-flip-side')) {
+        isDragging72 = false;
+        mousemove72 = false;
+    }
+
+
+    if (isDragging61 && mousemove61 && elementPage61.classList.contains('right-flip-side')) {
         isDragging61 = false;
+        mousemove61 = false;
         if (deltaX61 > 150) {
             setTimeout(() => {
                 objectifPokemon.classList.add('fade-in');
@@ -1282,7 +1988,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance += 4;
+                totalDistance += 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1317,7 +2023,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance -= 4;
+                totalDistance -= 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1331,6 +2037,18 @@ document.addEventListener('mouseup', () => {
 
                 // Check if the total distance exceeds a certain value (adjust as needed)
                 if (totalDistance <= -345) {
+                    mask61.classList.add('right-mask-side');
+                    mask62.classList.add('right-mask-side');
+                    mask61.classList.remove('mask');
+                    mask62.classList.remove('mask');
+
+
+                    elementPage61.classList.add('right-side');
+                    elementPage62.classList.add('right-side');
+                    elementPage61.classList.remove('right-flip-side');
+                    elementPage62.classList.remove('flip-side');
+                    mask61.style.transform = `translate3d(0px, 0, 0)`;
+                    mask62.style.transform = `translate3d(0px, 0, 0)`;
                     clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
                     deltaX = 0;
                     mask62.style.zIndex = 1;
@@ -1340,10 +2058,97 @@ document.addEventListener('mouseup', () => {
             }, 10);
         }
 
-
+    } else if (isDragging61 && mousemove61 && elementPage61.classList.contains('right-side')) {
+        isDragging61 = false;
+        mousemove61 = false;
     }
-    if (isDragging51 && mousemove51) {
+
+    if (isDragging62 && mousemove62 && elementPage62.classList.contains('right-side')) {
+        isDragging62 = false;
+        mousemove62 = false;
+        if (deltaX62 > 150) {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance += 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask61.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask62.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage61.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage62.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance >= 345) {
+                    ombre61.style.display = 'none';
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    elementPage62.style.zIndex = 1;
+                    elementPage61.style.zIndex = 10;
+                    mask62.style.zIndex = 1;
+                    mask61.style.zIndex = 10;
+                    page6.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+                    mask61.style.transform = 'translate3d(0px, 0, 0) translateX(0px)';
+                    elementPage61.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                    elementPage62.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                }
+            }, 10);
+        } else {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                page6.style.transform = 'rotateY(0deg) translateZ(13px) translateX(-333px) translateY(8px)';
+
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance -= 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask61.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask62.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage61.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage62.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+
+                // Your existing code for manual page turning
+                // ...
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance <= 0) {
+                    mask61.classList.remove('mask');
+                    mask62.classList.remove('mask');
+                    mask61.classList.add('right-mask-side');
+                    mask62.classList.add('right-mask-side');
+
+                    elementPage61.classList.remove('right-flip-side');
+                    elementPage62.classList.remove('flip-side');
+                    elementPage61.classList.add('right-side');
+                    elementPage62.classList.add('right-side');
+                    mask61.style.transform = `translate3d(0px, 0, 0)`;
+                    mask62.style.transform = `translate3d(10px, 0px, 0px)`;
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    deltaX = 0;
+                    mask62.style.zIndex = 10;
+                    mask61.style.zIndex = 1;
+                    totalDistance = 0; // Garder une trace de la distance totale parcourue                        
+                }
+            }, 10);
+        }
+    } else if (isDragging62 && mousemove62 && elementPage62.classList.contains('right-flip-side')) {
+        isDragging62 = false;
+        mousemove62 = false;
+    }
+
+    if (isDragging51 && mousemove51 && elementPage51.classList.contains('right-flip-side')) {
         isDragging51 = false;
+        mousemove51 = false;
         if (deltaX51 > 150) {
             // Start the auto-turn timer
             autoTurnTimer = setInterval(() => {
@@ -1351,7 +2156,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance += 4;
+                totalDistance += 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1386,7 +2191,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance -= 4;
+                totalDistance -= 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1400,6 +2205,18 @@ document.addEventListener('mouseup', () => {
 
                 // Check if the total distance exceeds a certain value (adjust as needed)
                 if (totalDistance <= -345) {
+                    mask51.classList.add('right-mask-side');
+                    mask52.classList.add('right-mask-side');
+                    mask51.classList.remove('mask');
+                    mask52.classList.remove('mask');
+
+
+                    elementPage51.classList.add('right-side');
+                    elementPage52.classList.add('right-side');
+                    elementPage51.classList.remove('right-flip-side');
+                    elementPage52.classList.remove('flip-side');
+                    mask51.style.transform = `translate3d(0px, 0, 0)`;
+                    mask52.style.transform = `translate3d(0px, 0, 0)`;
                     clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
                     deltaX = 0;
                     mask52.style.zIndex = 1;
@@ -1408,9 +2225,97 @@ document.addEventListener('mouseup', () => {
                 }
             }, 10);
         }
+    } else if (isDragging51 && mousemove51 && elementPage51.classList.contains('right-side')) {
+        isDragging51 = false;
+        mousemove51 = false;
     }
-    if (isDragging41 && mousemove41) {
+
+    if (isDragging52 && mousemove52 && elementPage52.classList.contains('right-side')) {
+        isDragging52 = false;
+        mousemove52 = false;
+        if (deltaX52 > 150) {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance += 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask51.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask52.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage51.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage52.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance >= 345) {
+                    ombre61.style.display = 'none';
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    elementPage52.style.zIndex = 1;
+                    elementPage51.style.zIndex = 10;
+                    mask52.style.zIndex = 1;
+                    mask51.style.zIndex = 10;
+                    page5.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+                    mask51.style.transform = 'translate3d(0px, 0, 0) translateX(0px)';
+                    elementPage51.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                    elementPage52.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                }
+            }, 10);
+        } else {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                page5.style.transform = 'rotateY(0deg) translateZ(14px) translateX(-335px) translateY(8px)';
+
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance -= 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask51.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask52.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage51.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage52.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+
+                // Your existing code for manual page turning
+                // ...
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance <= 0) {
+                    mask51.classList.remove('mask');
+                    mask52.classList.remove('mask');
+                    mask51.classList.add('right-mask-side');
+                    mask62.classList.add('right-mask-side');
+
+                    elementPage51.classList.remove('right-flip-side');
+                    elementPage52.classList.remove('flip-side');
+                    elementPage51.classList.add('right-side');
+                    elementPage52.classList.add('right-side');
+                    mask51.style.transform = `translate3d(0px, 0, 0)`;
+                    mask52.style.transform = `translate3d(10px, 0px, 0px)`;
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    deltaX = 0;
+                    mask52.style.zIndex = 10;
+                    mask51.style.zIndex = 1;
+                    totalDistance = 0; // Garder une trace de la distance totale parcourue                        
+                }
+            }, 10);
+        }
+    } else if (isDragging52 && mousemove52 && elementPage52.classList.contains('right-flip-side')) {
+        isDragging52 = false;
+        mousemove52 = false;
+    }
+
+    if (isDragging41 && mousemove41 && elementPage41.classList.contains('right-flip-side')) {
         isDragging41 = false;
+        mousemove41 = false;
         if (deltaX41 > 150) {
             // Start the auto-turn timer
             autoTurnTimer = setInterval(() => {
@@ -1418,7 +2323,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance += 4;
+                totalDistance += 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1453,7 +2358,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance -= 4;
+                totalDistance -= 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1467,6 +2372,18 @@ document.addEventListener('mouseup', () => {
 
                 // Check if the total distance exceeds a certain value (adjust as needed)
                 if (totalDistance <= -345) {
+                    mask41.classList.add('right-mask-side');
+                    mask42.classList.add('right-mask-side');
+                    mask41.classList.remove('mask');
+                    mask42.classList.remove('mask');
+
+
+                    elementPage41.classList.add('right-side');
+                    elementPage42.classList.add('right-side');
+                    elementPage41.classList.remove('right-flip-side');
+                    elementPage42.classList.remove('flip-side');
+                    mask41.style.transform = `translate3d(0px, 0, 0)`;
+                    mask42.style.transform = `translate3d(0px, 0, 0)`;
                     clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
                     deltaX = 0;
                     mask42.style.zIndex = 1;
@@ -1478,9 +2395,97 @@ document.addEventListener('mouseup', () => {
 
 
 
+    } else if (isDragging41 && mousemove41 && elementPage41.classList.contains('right-side')) {
+        isDragging41 = false;
+        mousemove41 = false;
     }
-    if (isDragging31 && mousemove31) {
+
+    if (isDragging42 && mousemove42 && elementPage42.classList.contains('right-side')) {
+        isDragging42 = false;
+        mousemove42 = false;
+        if (deltaX42 > 150) {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance += 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask41.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask42.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage41.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage42.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance >= 345) {
+                    ombre61.style.display = 'none';
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    elementPage42.style.zIndex = 1;
+                    elementPage41.style.zIndex = 10;
+                    mask42.style.zIndex = 1;
+                    mask41.style.zIndex = 10;
+                    page4.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+                    mask41.style.transform = 'translate3d(0px, 0, 0) translateX(0px)';
+                    elementPage41.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                    elementPage42.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                }
+            }, 10);
+        } else {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                page4.style.transform = 'rotateY(0deg) translateZ(15px) translateX(-337px) translateY(8px)';
+
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance -= 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask41.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask42.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage41.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage42.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+
+                // Your existing code for manual page turning
+                // ...
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance <= 0) {
+                    mask41.classList.remove('mask');
+                    mask42.classList.remove('mask');
+                    mask41.classList.add('right-mask-side');
+                    mask42.classList.add('right-mask-side');
+
+                    elementPage41.classList.remove('right-flip-side');
+                    elementPage42.classList.remove('flip-side');
+                    elementPage41.classList.add('right-side');
+                    elementPage42.classList.add('right-side');
+                    mask41.style.transform = `translate3d(0px, 0, 0)`;
+                    mask42.style.transform = `translate3d(10px, 0px, 0px)`;
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    deltaX = 0;
+                    mask42.style.zIndex = 10;
+                    mask41.style.zIndex = 1;
+                    totalDistance = 0; // Garder une trace de la distance totale parcourue                        
+                }
+            }, 10);
+        }
+    } else if (isDragging42 && mousemove42 && elementPage42.classList.contains('right-flip-side')) {
+        isDragging42 = false;
+        mousemove42 = false;
+    }
+
+    if (isDragging31 && mousemove31 && elementPage31.classList.contains('right-flip-side')) {
         isDragging31 = false;
+        mousemove31 = false;
         if (deltaX31 > 150) {
             // Start the auto-turn timer
             autoTurnTimer = setInterval(() => {
@@ -1488,7 +2493,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance += 4;
+                totalDistance += 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1523,7 +2528,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance -= 4;
+                totalDistance -= 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1537,6 +2542,18 @@ document.addEventListener('mouseup', () => {
 
                 // Check if the total distance exceeds a certain value (adjust as needed)
                 if (totalDistance <= -345) {
+                    mask31.classList.add('right-mask-side');
+                    mask32.classList.add('right-mask-side');
+                    mask31.classList.remove('mask');
+                    mask32.classList.remove('mask');
+
+
+                    elementPage31.classList.add('right-side');
+                    elementPage32.classList.add('right-side');
+                    elementPage31.classList.remove('right-flip-side');
+                    elementPage32.classList.remove('flip-side');
+                    mask31.style.transform = `translate3d(0px, 0, 0)`;
+                    mask32.style.transform = `translate3d(0px, 0, 0)`;
                     clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
                     deltaX = 0;
                     mask32.style.zIndex = 1;
@@ -1546,9 +2563,97 @@ document.addEventListener('mouseup', () => {
             }, 10);
         }
 
+    } else if (isDragging31 && mousemove31 && elementPage31.classList.contains('right-side')) {
+        isDragging31 = false;
+        mousemove31 = false;
     }
-    if (isDragging21 && mousemove21) {
+
+    if (isDragging32 && mousemove32 && elementPage32.classList.contains('right-side')) {
+        isDragging32 = false;
+        mousemove32 = false;
+        if (deltaX32 > 150) {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance += 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask31.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask32.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage31.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage32.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance >= 345) {
+                    ombre61.style.display = 'none';
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    elementPage32.style.zIndex = 1;
+                    elementPage31.style.zIndex = 10;
+                    mask32.style.zIndex = 1;
+                    mask31.style.zIndex = 10;
+                    page3.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+                    mask31.style.transform = 'translate3d(0px, 0, 0) translateX(0px)';
+                    elementPage31.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                    elementPage32.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                }
+            }, 10);
+        } else {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                page3.style.transform = 'rotateY(0deg) translateZ(16px) translateX(-339px) translateY(8px)';
+
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance -= 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask31.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask32.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage31.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage32.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+
+                // Your existing code for manual page turning
+                // ...
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance <= 0) {
+                    mask31.classList.remove('mask');
+                    mask32.classList.remove('mask');
+                    mask31.classList.add('right-mask-side');
+                    mask32.classList.add('right-mask-side');
+
+                    elementPage31.classList.remove('right-flip-side');
+                    elementPage32.classList.remove('flip-side');
+                    elementPage31.classList.add('right-side');
+                    elementPage32.classList.add('right-side');
+                    mask31.style.transform = `translate3d(0px, 0, 0)`;
+                    mask32.style.transform = `translate3d(10px, 0px, 0px)`;
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    deltaX = 0;
+                    mask32.style.zIndex = 10;
+                    mask31.style.zIndex = 1;
+                    totalDistance = 0; // Garder une trace de la distance totale parcourue                        
+                }
+            }, 10);
+        }
+    } else if (isDragging32 && mousemove32 && elementPage32.classList.contains('right-flip-side')) {
+        isDragging32 = false;
+        mousemove32 = false;
+    }
+
+    if (isDragging21 && mousemove21 && elementPage21.classList.contains('right-flip-side')) {
         isDragging21 = false;
+        mousemove21 = false;
         if (deltaX21 > 150) {
             // Start the auto-turn timer
             autoTurnTimer = setInterval(() => {
@@ -1556,7 +2661,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance += 4;
+                totalDistance += 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1591,7 +2696,7 @@ document.addEventListener('mouseup', () => {
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
                 // Increment the total distance by a small amount (adjust as needed)
-                totalDistance -= 4;
+                totalDistance -= 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
                 // Appliquer la transformation aux éléments
@@ -1605,6 +2710,18 @@ document.addEventListener('mouseup', () => {
 
                 // Check if the total distance exceeds a certain value (adjust as needed)
                 if (totalDistance <= -345) {
+                    mask21.classList.add('right-mask-side');
+                    mask22.classList.add('right-mask-side');
+                    mask21.classList.remove('mask');
+                    mask22.classList.remove('mask');
+
+
+                    elementPage21.classList.add('right-side');
+                    elementPage22.classList.add('right-side');
+                    elementPage21.classList.remove('right-flip-side');
+                    elementPage22.classList.remove('flip-side');
+                    mask21.style.transform = `translate3d(0px, 0, 0)`;
+                    mask22.style.transform = `translate3d(0px, 0, 0)`;
                     clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
                     deltaX = 0;
                     mask22.style.zIndex = 1;
@@ -1613,6 +2730,92 @@ document.addEventListener('mouseup', () => {
                 }
             }, 15);
         }
+    } else if (isDragging21 && mousemove21 && elementPage21.classList.contains('right-side')) {
+        isDragging21 = false;
+        mousemove21 = false;
+    }
+
+    if (isDragging22 && mousemove22 && elementPage22.classList.contains('right-side')) {
+        isDragging22 = false;
+        mousemove22 = false;
+        if (deltaX22 > 150) {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance += 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask21.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask22.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage21.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage22.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance >= 345) {
+                    ombre61.style.display = 'none';
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    elementPage22.style.zIndex = 1;
+                    elementPage21.style.zIndex = 10;
+                    mask22.style.zIndex = 1;
+                    mask21.style.zIndex = 10;
+                    page2.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
+                    mask21.style.transform = 'translate3d(0px, 0, 0) translateX(0px)';
+                    elementPage21.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                    elementPage22.style.boxShadow = '0px -1px 2px rgba(150, 150, 150, 0.8)';
+                }
+            }, 10);
+        } else {
+            // Start the auto-turn timer
+            autoTurnTimer = setInterval(() => {
+                // Bornes des valeurs
+                page2.style.transform = 'rotateY(0deg) translateZ(16px) translateX(-341px) translateY(8px)';
+
+                const maxTranslation = 345; // La valeur maximale de la translation
+                const minTranslation = 0;  // La valeur minimale de la translation
+                // Increment the total distance by a small amount (adjust as needed)
+                totalDistance -= 6;
+                let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
+
+                // Appliquer la transformation aux éléments
+                mask21.style.transform = `translate3d(${0 + translation}px, 0, 0)`;
+                mask22.style.transform = `translate3d(${0 + (translation + 10)}px, 0, 0)`;
+
+                elementPage21.style.transform = `translate3d(${-345 + translation}px, 0, 0)`;
+                elementPage22.style.transform = `translate3d(${-translation}px, 0, 0)`;
+
+
+                // Your existing code for manual page turning
+                // ...
+
+                // Check if the total distance exceeds a certain value (adjust as needed)
+                if (totalDistance <= 0) {
+                    mask21.classList.remove('mask');
+                    mask22.classList.remove('mask');
+                    mask21.classList.add('right-mask-side');
+                    mask22.classList.add('right-mask-side');
+
+                    elementPage21.classList.remove('right-flip-side');
+                    elementPage22.classList.remove('flip-side');
+                    elementPage21.classList.add('right-side');
+                    elementPage22.classList.add('right-side');
+                    mask21.style.transform = `translate3d(0px, 0, 0)`;
+                    mask22.style.transform = `translate3d(10px, 0px, 0px)`;
+                    clearInterval(autoTurnTimer); // Stop the timer when the desired distance is reached
+                    deltaX = 0;
+                    mask22.style.zIndex = 10;
+                    mask21.style.zIndex = 1;
+                    totalDistance = 0; // Garder une trace de la distance totale parcourue                        
+                }
+            }, 10);
+        }
+    } else if (isDragging22 && mousemove22 && elementPage22.classList.contains('right-flip-side')) {
+        isDragging22 = false;
+        mousemove22 = false;
     }
     /*if (isDragging11 && mousemove11) {
         isDragging11 = false;
@@ -1720,6 +2923,7 @@ suivant.addEventListener('click', () => {
         compteur = 0;
     }
 });
+
 
 precedent.addEventListener('click', () => {
     if (compteur == 1) {

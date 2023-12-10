@@ -79,6 +79,7 @@ const page8 = document.querySelector('.page8');
 hardCoverFront.addEventListener('click', () => {
 
     if (book.classList.contains('lecture')) {
+        book.classList.remove('lecture')
         setTimeout(() => {
             hardCoverFront.style.transform = 'rotateY(-34deg) translateZ(8px)';
             hardCoverBack.style.transform = 'rotateY(-15deg) translateZ(-5px)';
@@ -91,8 +92,8 @@ hardCoverFront.addEventListener('click', () => {
             page7.style.transform = 'rotateY(-32deg) translateY(10px)';
             page8.style.transform = 'rotateY(-34deg) translateY(10px)';
         }, 100);
-        book.classList.remove('lecture')
     } else {
+        book.classList.add('lecture');
         setTimeout(() => {
             hardCoverFront.style.transform = 'rotateY(-180deg)';
             hardCoverBack.style.transform = 'translateX(25px)';
@@ -105,7 +106,6 @@ hardCoverFront.addEventListener('click', () => {
             page7.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
             page8.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
         }, 100);
-        book.classList.add('lecture');
     }
 });
 
@@ -288,6 +288,7 @@ elementPage81.addEventListener('touchstart', (e) => {
     totalDistance = 0; // Garder une trace de la distance totale parcourue
     clearInterval(autoTurnTimer);
     mousemove81 = true;
+    e.preventDefault();
 });
 elementPage71.addEventListener('mousedown', (e) => {
     isDragging71 = true;
@@ -296,7 +297,15 @@ elementPage71.addEventListener('mousedown', (e) => {
     totalDistance = 0; // Garder une trace de la distance totale parcourue
     clearInterval(autoTurnTimer);
     mousemove71 = true;
-
+});
+elementPage71.addEventListener('touchstart', (e) => {
+    isDragging71 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer);
+    mousemove71 = true;
+    e.preventDefault();
 });
 elementPage61.addEventListener('mousedown', (e) => {
     isDragging61 = true;
@@ -307,6 +316,15 @@ elementPage61.addEventListener('mousedown', (e) => {
     mousemove61 = true;
 
 });
+elementPage61.addEventListener('touchstart', (e) => {
+    isDragging61 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer);
+    mousemove61 = true;
+    e.preventDefault();
+});
 elementPage51.addEventListener('mousedown', (e) => {
     isDragging51 = true;
     initialX = e.clientX;
@@ -315,6 +333,15 @@ elementPage51.addEventListener('mousedown', (e) => {
     clearInterval(autoTurnTimer);
     mousemove51 = true;
 
+});
+elementPage51.addEventListener('touchstart', (e) => {
+    isDragging51 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer);
+    mousemove51 = true;
+    e.preventDefault();
 });
 elementPage41.addEventListener('mousedown', (e) => {
     isDragging41 = true;
@@ -325,6 +352,15 @@ elementPage41.addEventListener('mousedown', (e) => {
     mousemove41 = true;
 
 });
+elementPage41.addEventListener('touchstart', (e) => {
+    isDragging41 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer);
+    mousemove41 = true;
+    e.preventDefault();
+});
 elementPage31.addEventListener('mousedown', (e) => {
     isDragging31 = true;
     initialX = e.clientX;
@@ -334,6 +370,15 @@ elementPage31.addEventListener('mousedown', (e) => {
     mousemove31 = true;
 
 });
+elementPage31.addEventListener('touchstart', (e) => {
+    isDragging31 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer);
+    mousemove31 = true;
+    e.preventDefault();
+});
 elementPage21.addEventListener('mousedown', (e) => {
     isDragging21 = true;
     initialX = e.clientX;
@@ -342,6 +387,15 @@ elementPage21.addEventListener('mousedown', (e) => {
     clearInterval(autoTurnTimer);
     mousemove21 = true;
 
+});
+elementPage21.addEventListener('touchstart', (e) => {
+    isDragging21 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer);
+    mousemove21 = true;
+    e.preventDefault();
 });
 /*elementPage11.addEventListener('mousedown', (e) => {
     isDragging11 = true;
@@ -362,6 +416,15 @@ elementPage82.addEventListener('mousedown', (e) => {
     mousemove82 = true;
 
 });
+elementPage82.addEventListener('touchstart', (e) => {
+    isDragging82 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer);
+    mousemove82 = true;
+    e.preventDefault();
+});
 elementPage72.addEventListener('mousedown', (e) => {
     isDragging72 = true;
     initialX = e.clientX;
@@ -369,6 +432,15 @@ elementPage72.addEventListener('mousedown', (e) => {
     totalDistance = 0; // Garder une trace de la distance totale parcourue
     clearInterval(autoTurnTimer);
     mousemove72 = true;
+});
+elementPage72.addEventListener('touchstart', (e) => {
+    isDragging72 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer);
+    mousemove72 = true;
+    e.preventDefault();
 });
 elementPage62.addEventListener('mousedown', (e) => {
     isDragging62 = true;
@@ -378,6 +450,15 @@ elementPage62.addEventListener('mousedown', (e) => {
     clearInterval(autoTurnTimer);
     mousemove62 = true;
 });
+elementPage62.addEventListener('touchstart', (e) => {
+    isDragging62 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer);
+    mousemove62 = true;
+    e.preventDefault();
+});
 elementPage52.addEventListener('mousedown', (e) => {
     isDragging52 = true;
     initialX = e.clientX;
@@ -385,8 +466,15 @@ elementPage52.addEventListener('mousedown', (e) => {
     totalDistance = 0; // Garder une trace de la distance totale parcourue
     clearInterval(autoTurnTimer);
     mousemove52 = true;
-
-
+});
+elementPage52.addEventListener('touchstart', (e) => {
+    isDragging52 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer);
+    mousemove52 = true;
+    e.preventDefault();
 });
 elementPage42.addEventListener('mousedown', (e) => {
     isDragging42 = true;
@@ -395,8 +483,15 @@ elementPage42.addEventListener('mousedown', (e) => {
     totalDistance = 0; // Garder une trace de la distance totale parcourue
     clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
     mousemove42 = true;
-
-
+});
+elementPage42.addEventListener('touchstart', (e) => {
+    isDragging42 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    mousemove42 = true;
+    e.preventDefault();
 });
 elementPage32.addEventListener('mousedown', (e) => {
     isDragging32 = true;
@@ -406,6 +501,15 @@ elementPage32.addEventListener('mousedown', (e) => {
     clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
     mousemove32 = true;
 });
+elementPage32.addEventListener('touchstart', (e) => {
+    isDragging32 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    mousemove32 = true;
+    e.preventDefault();
+});
 elementPage22.addEventListener('mousedown', (e) => {
     isDragging22 = true;
     initialX = e.clientX;
@@ -413,8 +517,15 @@ elementPage22.addEventListener('mousedown', (e) => {
     totalDistance = 0; // Garder une trace de la distance totale parcourue
     clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
     mousemove22 = true;
-
-
+});
+elementPage22.addEventListener('touchstart', (e) => {
+    isDragging22 = true;
+    initialX = e.touches[0].clientX;
+    deltaX = 0;
+    totalDistance = 0; // Garder une trace de la distance totale parcourue
+    clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
+    mousemove22 = true;
+    e.preventDefault();
 });
 /*elementPage12.addEventListener('mousedown', (e) => {
     isDragging12 = true;
@@ -1508,7 +1619,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging82) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
     
             page8.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-329px) translateY(8px)';
@@ -1578,7 +1689,7 @@ document.addEventListener('mousemove', (e) => {
     
     
         if (isDragging71) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
             page7.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
     
@@ -1650,7 +1761,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging72) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
             page7.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-331px) translateY(8px)';
     
@@ -1717,7 +1828,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging61) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
             page6.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
     
@@ -1792,7 +1903,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging62) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
     
             page6.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-333px) translateY(8px)';
@@ -1862,7 +1973,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging51) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
             page5.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
     
@@ -1939,7 +2050,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging52) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
     
             page5.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-335px) translateY(8px)';
@@ -2008,7 +2119,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging41) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
             page4.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
     
@@ -2088,7 +2199,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging42) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
     
             page4.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-337px) translateY(8px)';
@@ -2159,7 +2270,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging31) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
     
             page3.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
@@ -2243,7 +2354,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging32) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
     
             page3.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-339px) translateY(8px)';
@@ -2311,7 +2422,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging21) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
             page2.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
     
@@ -2383,7 +2494,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging22) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
     
             page2.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-341px) translateY(8px)';

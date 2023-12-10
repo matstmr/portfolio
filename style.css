@@ -136,6 +136,10 @@
 		transform: rotateX(20deg) rotateZ(-1deg);
 	}
 
+	.book.lecture {
+		margin-left: 320px;
+	}
+
 	.hardcover_front {
 		-webkit-transform: rotateY(-34deg) translateZ(8px);
 		-moz-transform: rotateY(-34deg) translateZ(8px);
@@ -1515,3 +1519,210 @@ background: linear-gradient(173deg, rgba(242,242,242,1) 0%, rgba(93,135,78,1) 50
 			width: 0%;
 		}
 	}
+
+	@media screen and (max-width: 770px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.9;
+		}
+
+		.book.lecture {
+			margin-left: 300px;
+		}
+	  }
+
+	  @media screen and (max-width: 720px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.85;
+		}
+
+		.book.lecture {
+			margin-left: 280px;
+		}
+	  }
+
+	  @media screen and (max-width: 655px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.8;
+		}
+
+		.book.lecture {
+			margin-left: 260px;
+		}
+	  }
+
+	  @media screen and (max-width: 620px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.75;
+		}
+
+		.book.lecture {
+			margin-left: 240px;
+		}
+	  }
+	  
+	  @media screen and (max-width: 608px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.7;
+		}
+
+		.book.lecture {
+			margin-left: 220px;
+		}
+	  }
+
+	  @media screen and (max-width: 575px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.65;
+		}
+
+		.book.lecture {
+			margin-left: 200px;
+		}
+	  }
+
+	  @media screen and (max-width: 560px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.6;
+		}
+
+		.book.lecture {
+			margin-left: 180px;
+		}
+	  }
+
+	  @media screen and (max-width: 535px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.58;
+		}
+
+		.book.lecture {
+			margin-left: 160px;
+		}
+	  }
+
+	  @media screen and (max-width: 515px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.5;
+		}
+
+		.book.lecture {
+			margin-left: 140px;
+		}
+	  }
+
+	  @media screen and (max-width: 490px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.45;
+		}
+
+		.book.lecture {
+			margin-left: 100px;
+		}
+	  }
+
+	  @media screen and (max-width: 455px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.4;
+		}
+
+		.book.lecture {
+			margin-left: 80px;
+		}
+	  }
+
+	  @media screen and (max-width: 435px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.4;
+		}
+
+		.book.lecture {
+			margin-left: 60px;
+		}
+	  }
+
+	  @media screen and (max-width: 415px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.4;
+		}
+
+		.book.lecture {
+			margin-left: 60px;
+		}
+	  }
+	  
+
+	  @media screen and (max-height: 630px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+		 	scale: 0.95;
+		}
+	  }
+
+	  @media screen and (max-height: 600px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+		 	scale: 0.9;
+		}
+	  }
+
+	  @media screen and (max-height: 570px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.8;
+		}
+	  }
+
+	  @media screen and (max-height: 500px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.7;
+		}
+	  }
+
+	  @media screen and (max-height: 440px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.6;
+		}
+	  }
+
+	  @media screen and (max-height: 375px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.5;
+		}
+	  }
+
+	  @media screen and (max-height: 310px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.4;
+		}
+	  }
+
+	  @media screen and (max-height: 245px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.35;
+		}
+	  }
+
+	  @media screen and (max-height: 215px) {
+		/* Les styles à appliquer lorsque la largeur de l'écran est inférieure à 600 pixels */
+		.book {
+			scale: 0.3;
+		}
+	  }

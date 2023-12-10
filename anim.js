@@ -5428,7 +5428,7 @@ const handleLienAvecImageClickKarma = () => {
 // Ajoutez un écouteur d'événements pour le clic
 lienAvecImageKarma.addEventListener('click', handleLienAvecImageClickKarma);
 // Ajoutez un écouteur d'événements pour le toucher sur les écrans tactiles
-lienAvecImageKarma.addEventListener('touchstart', handleLienAvecImageClickKarma);
+lienAvecImageKarma.addEventListener('touchend', handleLienAvecImageClickKarma);
 
 
 const lienAvecImagePokemon = document.getElementById('lienAvecImagePokemon');
@@ -5436,13 +5436,13 @@ const lienAvecImagePokemon = document.getElementById('lienAvecImagePokemon');
 // Fonction pour gérer le clic ou le toucher sur le lien avec l'image
 const handleLienAvecImageClickPokemon = () => {
     // Votre logique ici, par exemple une redirection vers une autre page
-    window.open('https://matstmr.github.io/pokedexcard"', '_blank');
+    window.open('https://matstmr.github.io/pokedexcard/', '_blank');
 };
 
 // Ajoutez un écouteur d'événements pour le clic
 lienAvecImagePokemon.addEventListener('click', handleLienAvecImageClickPokemon);
 // Ajoutez un écouteur d'événements pour le toucher sur les écrans tactiles
-lienAvecImagePokemon.addEventListener('touchend', (event) => {
+lienAvecImagePokemon.addEventListener('touchstart', (event) => {
     event.stopPropagation();
     handleLienAvecImageClickPokemon()
 });

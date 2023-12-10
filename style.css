@@ -274,12 +274,6 @@ a {
 	background-image: radial-gradient(circle farthest-corner at 56% -8%, #DEEBEF 8%, transparent 0), radial-gradient(circle farthest-corner at 50% 108%, #DEEBEF 8%, transparent 0), linear-gradient(90deg, #635648, #2e1800 21%, #635648 30%, #2e1800 48%, #635648 68%, #2e1800 79%, #635648);
 }
 
-@media screen and (max-width: 37.8125em) {
-	.book {
-		margin: 0 auto;
-	}
-}
-
 #page-71 {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1716,7 +1710,7 @@ a {
 
 @media screen and (max-height: 630px) and (orientation: landscape) {
 	.book {
-		scale: 0.95;
+		scale: 0.98;
 	}
 
 	.book.lecture {
@@ -1724,19 +1718,11 @@ a {
 	}
 }
 
-@media screen and (max-height: 600px) and (orientation: landscape) {
+
+
+@media screen and (max-height: 575px) and (orientation: landscape) {
 	.book {
 		scale: 0.9;
-	}
-
-	.book.lecture {
-		margin-left: 280px;
-	}
-}
-
-@media screen and (max-height: 570px) and (orientation: landscape) {
-	.book {
-		scale: 0.8;
 	}
 
 	.book.lecture {
@@ -1744,9 +1730,9 @@ a {
 	}
 }
 
-@media screen and (max-height: 500px) and (orientation: landscape) {
+@media screen and (max-height: 530px) and (orientation: landscape) {
 	.book {
-		scale: 0.7;
+		scale: 0.88;
 	}
 
 	.book.lecture {
@@ -1754,9 +1740,9 @@ a {
 	}
 }
 
-@media screen and (max-height: 440px) and (orientation: landscape) {
+@media screen and (max-height: 513px) and (orientation: landscape) {
 	.book {
-		scale: 0.6;
+		scale: 0.85;
 	}
 
 	.book.lecture {
@@ -1764,9 +1750,9 @@ a {
 	}
 }
 
-@media screen and (max-height: 375px) and (orientation: landscape) {
+@media screen and (max-height: 500px) and (orientation: landscape) {
 	.book {
-		scale: 0.5;
+		scale: 0.8;
 	}
 
 	.book.lecture {
@@ -1774,9 +1760,9 @@ a {
 	}
 }
 
-@media screen and (max-height: 310px) and (orientation: landscape) {
+@media screen and (max-height: 470px) and (orientation: landscape) {
 	.book {
-		scale: 0.4;
+		scale: 0.75;
 	}
 
 	.book.lecture {
@@ -1784,13 +1770,83 @@ a {
 	}
 }
 
-@media screen and (max-height: 245px) and (orientation: landscape) {
+@media screen and (max-height: 445px) and (orientation: landscape) {
+	.book {
+		scale: 0.7;
+	}
+
+	.book.lecture {
+		margin-left: 160px;
+	}
+}
+
+@media screen and (max-height: 412px) and (orientation: landscape) {
+	.book {
+		scale: 0.65;
+	}
+
+	.book.lecture {
+		margin-left: 140px;
+	}
+}
+
+@media screen and (max-height: 385px) and (orientation: landscape) {
+	.book {
+		scale: 0.6;
+	}
+
+	.book.lecture {
+		margin-left: 120px;
+	}
+}
+
+@media screen and (max-height: 355px) and (orientation: landscape) {
+	.book {
+		scale: 0.55;
+	}
+
+	.book.lecture {
+		margin-left: 100px;
+	}
+}
+
+@media screen and (max-height: 330px) and (orientation: landscape) {
+	.book {
+		scale: 0.5;
+	}
+
+	.book.lecture {
+		margin-left: 80px;
+	}
+}
+
+@media screen and (max-height: 300px) and (orientation: landscape) {
+	.book {
+		scale: 0.45;
+	}
+
+	.book.lecture {
+		margin-left: 60px;
+	}
+}
+
+@media screen and (max-height: 280px) and (orientation: landscape) {
+	.book {
+		scale: 0.4;
+	}
+
+	.book.lecture {
+		margin-left: 40px;
+	}
+}
+
+@media screen and (max-height: 240px) and (orientation: landscape) {
 	.book {
 		scale: 0.35;
 	}
 
 	.book.lecture {
-		margin-left: 160px;
+		margin-left: 20px;
 	}
 }
 
@@ -1800,26 +1856,6 @@ a {
 	}
 
 	.book.lecture {
-		margin-left: 140px;
-	}
-}
-
-@media screen and (max-height: 190px) and (orientation: landscape) {
-	.book {
-		scale: 0.25;
-	}
-
-	.book.lecture {
-		margin-left: 120px;
-	}
-}
-
-@media screen and (max-height: 145px) and (orientation: landscape) {
-	.book {
-		scale: 0.22;
-	}
-
-	.book.lecture {
-		margin-left: 100px;
+		margin-left: 0px;
 	}
 }

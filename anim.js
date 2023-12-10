@@ -66,8 +66,6 @@ const hardCoverFront = document.querySelector('.hardcover_front');
 const hardCoverBack = document.querySelector('.hardcover_back');
 const book = document.querySelector('.book');
 const titreHardCoverFront = document.querySelector('.hardcover_front h1');
-const pHardCoverFront = document.querySelector('.hardcover_front p');
-
 
 //const page1 = document.querySelector('.page1')
 const page2 = document.querySelector('.page2');
@@ -95,7 +93,6 @@ hardCoverFront.addEventListener('click', () => {
             page7.style.transform = 'rotateY(-32deg) translateY(10px)';
             page8.style.transform = 'rotateY(-34deg) translateY(10px)';
             titreHardCoverFront.style.display = 'block';
-            pHardCoverFront.style.display = 'block';
         }, 100);
     } else {
         book.classList.add('lecture');
@@ -111,7 +108,6 @@ hardCoverFront.addEventListener('click', () => {
             page7.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
             page8.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
             titreHardCoverFront.style.display = 'none';
-            pHardCoverFront.style.display = 'none';
         }, 100);
     }
 });
@@ -2509,6 +2505,13 @@ document.addEventListener('mousemove', (e) => {
             deltaX31 = totalDistance;
     
             if (deltaX31 > 200) {
+                //elementPage82.style.transform = 'translate3d(-355px, 0, 0)';
+                //elementPage72.style.transform = 'translate3d(-353px, 0, 0)';
+                //elementPage62.style.transform = 'translate3d(-351px, 0, 0)';
+                //elementPage52.style.transform = 'translate3d(-349px, 0, 0)';
+                //elementPage42.style.transform = 'translate3d(-347px, 0, 0)';
+    
+                //page1.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
                 page2.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
     
                 page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(-333px) translateY(8px)';
@@ -2517,6 +2520,13 @@ document.addEventListener('mousemove', (e) => {
                 page7.style.transform = 'rotateY(0deg) translateZ(11px) translateX(-339px) translateY(8px)';
                 page8.style.transform = 'rotateY(0deg) translateZ(10px) translateX(-341px) translateY(8px)';
             } else {
+                //elementPage82.style.transform = 'translate3d(-353px, 0, 0)';
+                //elementPage72.style.transform = 'translate3d(-351px, 0, 0)';
+                //elementPage62.style.transform = 'translate3d(-349px, 0, 0)';
+                //elementPage52.style.transform = 'translate3d(-347px, 0, 0)';
+                //elementPage42.style.transform = 'translate3d(-345px, 0, 0)';
+    
+                //page1.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
                 page2.style.transform = 'rotateY(0deg) translateZ(15px) translateX(16px) translateY(8px)';
     
                 page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(-331px) translateY(8px)';

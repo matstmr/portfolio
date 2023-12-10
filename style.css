@@ -1717,53 +1717,80 @@ background: linear-gradient(173deg, rgba(242,242,242,1) 0%, rgba(93,135,78,1) 50
 	.book {
 	  scale: 0.95;
 	}
+	.book.lecture {
+		margin-left: 300px;
+	  }
   }
   
   @media screen and (max-height: 600px) and (orientation: landscape) {
 	.book {
 	  scale: 0.9;
 	}
+	.book.lecture {
+		margin-left: 280px;
+	  }
   }
   
   @media screen and (max-height: 570px) and (orientation: landscape) {
 	.book {
 	  scale: 0.8;
 	}
+	.book.lecture {
+		margin-left: 260px;
+	  }
   }
   
   @media screen and (max-height: 500px) and (orientation: landscape) {
 	.book {
 	  scale: 0.7;
 	}
+	.book.lecture {
+		margin-left: 240px;
+	  }
   }
   
   @media screen and (max-height: 440px) and (orientation: landscape) {
 	.book {
 	  scale: 0.6;
 	}
+	.book.lecture {
+		margin-left: 220px;
+	  }
   }
   
   @media screen and (max-height: 375px) and (orientation: landscape) {
 	.book {
 	  scale: 0.5;
 	}
+	.book.lecture {
+		margin-left: 200px;
+	  }
   }
   
   @media screen and (max-height: 310px) and (orientation: landscape) {
 	.book {
 	  scale: 0.4;
 	}
+	.book.lecture {
+		margin-left: 180px;
+	  }
   }
   
   @media screen and (max-height: 245px) and (orientation: landscape) {
 	.book {
 	  scale: 0.35;
 	}
+	.book.lecture {
+		margin-left: 160px;
+	  }
   }
   
   @media screen and (max-height: 215px) and (orientation: landscape) {
 	.book {
 	  scale: 0.3;
 	}
+	.book.lecture {
+		margin-left: 140px;
+	  }
   }
   

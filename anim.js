@@ -5360,47 +5360,83 @@ const presentation = document.querySelector('.presentation');
 const iut = document.querySelector('.annee-iut');
 const wild = document.querySelector('.annee-wild');
 
-
-suivant.addEventListener('click', () => {
-    if (compteur == 0) {
+// Fonction pour gérer le clic ou le toucher suivant
+const handleSuivant = () => {
+    if (compteur === 0) {
         presentation.classList.remove('appear');
         presentation.classList.add('disappear');
         iut.classList.remove('disappear');
         iut.classList.add('appear');
         compteur = 1;
-    } else if (compteur == 1) {
+    } else if (compteur === 1) {
         iut.classList.remove('appear');
         iut.classList.add('disappear');
         wild.classList.remove('disappear');
         wild.classList.add('appear');
         compteur = 2;
-    } else if (compteur == 2) {
+    } else if (compteur === 2) {
         wild.classList.remove('appear');
         wild.classList.add('disappear');
         presentation.classList.remove('disappear');
         presentation.classList.add('appear');
         compteur = 0;
     }
-});
+};
 
-precedent.addEventListener('click', () => {
-    if (compteur == 1) {
+// Fonction pour gérer le clic ou le toucher précédent
+const handlePrecedent = () => {
+    if (compteur === 1) {
         presentation.classList.remove('disappear');
         presentation.classList.add('appear');
         iut.classList.remove('appear');
         iut.classList.add('disappear');
         compteur = 0;
-    } else if (compteur == 2) {
+    } else if (compteur === 2) {
         iut.classList.remove('disappear');
         iut.classList.add('appear');
         wild.classList.remove('appear');
         wild.classList.add('disappear');
         compteur = 1;
-    } else if (compteur == 0) {
+    } else if (compteur === 0) {
         presentation.classList.remove('appear');
         presentation.classList.add('disappear');
         wild.classList.remove('disappear');
         wild.classList.add('appear');
         compteur = 2;
     }
-});
+};
+
+// Ajoutez des écouteurs d'événements pour le clic ou le toucher
+suivant.addEventListener('click', handleSuivant);
+precedent.addEventListener('click', handlePrecedent);
+
+// Ajoutez des écouteurs d'événements pour les écrans tactiles
+suivant.addEventListener('touchstart', handleSuivant);
+precedent.addEventListener('touchstart', handlePrecedent);
+
+const lienAvecImageKarma = document.getElementById('lienAvecImageKarma');
+
+// Fonction pour gérer le clic ou le toucher sur le lien avec l'image
+const handleLienAvecImageClickKarma = () => {
+    // Votre logique ici, par exemple une redirection vers une autre page
+    window.open('https://matstmr.github.io/karmamanga/index.html', '_blank');
+};
+
+// Ajoutez un écouteur d'événements pour le clic
+lienAvecImageKarma.addEventListener('click', handleLienAvecImageClickKarma);
+// Ajoutez un écouteur d'événements pour le toucher sur les écrans tactiles
+lienAvecImageKarma.addEventListener('touchstart', handleLienAvecImageClickKarma);
+
+
+const lienAvecImagePokemon = document.getElementById('lienAvecImagePokemon');
+
+// Fonction pour gérer le clic ou le toucher sur le lien avec l'image
+const handleLienAvecImageClickPokemon = () => {
+    // Votre logique ici, par exemple une redirection vers une autre page
+    window.open('https://matstmr.github.io/pokedexcard"', '_blank');
+};
+
+// Ajoutez un écouteur d'événements pour le clic
+lienAvecImagePokemon.addEventListener('click', handleLienAvecImageClickPokemon);
+// Ajoutez un écouteur d'événements pour le toucher sur les écrans tactiles
+lienAvecImagePokemon.addEventListener('touchstart', handleLienAvecImageClickPokemon);

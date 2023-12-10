@@ -5443,6 +5443,7 @@ const handleLienAvecImageClickPokemon = () => {
 lienAvecImagePokemon.addEventListener('click', handleLienAvecImageClickPokemon);
 // Ajoutez un écouteur d'événements pour le toucher sur les écrans tactiles
 lienAvecImagePokemon.addEventListener('touchstart', (event) => {
+    handleLienAvecImageClickPokemon();
     event.stopPropagation();
-    handleLienAvecImageClickPokemon()
+
 });

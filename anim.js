@@ -2473,7 +2473,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging31) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
     
             page3.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
@@ -2543,7 +2543,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging32) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
     
             page3.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-339px) translateY(8px)';
@@ -2611,7 +2611,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging21) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
             page2.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
     
@@ -2683,7 +2683,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging22) {
-            const currentX = e.clientX;
+            const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
     
             page2.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-341px) translateY(8px)';

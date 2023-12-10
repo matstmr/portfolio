@@ -292,6 +292,20 @@ elementPage81.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove81 = true;
     e.preventDefault();
+
+    isDragging82 = false;
+    isDragging71 = false;
+    isDragging72 = false;
+    isDragging61 = false;
+    isDragging62 = false;
+    isDragging51 = false;
+    isDragging52 = false;
+    isDragging41 = false;
+    isDragging42 = false;
+    isDragging31 = false;
+    isDragging32 = false;
+    isDragging21 = false;
+    isDragging22 = false;
 });
 elementPage71.addEventListener('mousedown', (e) => {
     isDragging71 = true;
@@ -309,6 +323,20 @@ elementPage71.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove71 = true;
     e.preventDefault();
+
+    isDragging82 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging61 = false;
+    isDragging62 = false;
+    isDragging51 = false;
+    isDragging52 = false;
+    isDragging41 = false;
+    isDragging42 = false;
+    isDragging31 = false;
+    isDragging32 = false;
+    isDragging21 = false;
+    isDragging22 = false;
 });
 elementPage61.addEventListener('mousedown', (e) => {
     isDragging61 = true;
@@ -327,6 +355,20 @@ elementPage61.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove61 = true;
     e.preventDefault();
+
+    isDragging82 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging51 = false;
+    isDragging52 = false;
+    isDragging41 = false;
+    isDragging42 = false;
+    isDragging31 = false;
+    isDragging32 = false;
+    isDragging21 = false;
+    isDragging22 = false;
 });
 elementPage51.addEventListener('mousedown', (e) => {
     isDragging51 = true;
@@ -345,6 +387,20 @@ elementPage51.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove51 = true;
     e.preventDefault();
+
+    isDragging82 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging61 = false;
+    isDragging52 = false;
+    isDragging41 = false;
+    isDragging42 = false;
+    isDragging31 = false;
+    isDragging32 = false;
+    isDragging21 = false;
+    isDragging22 = false;
 });
 elementPage41.addEventListener('mousedown', (e) => {
     isDragging41 = true;
@@ -363,6 +419,20 @@ elementPage41.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove41 = true;
     e.preventDefault();
+
+    isDragging82 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging61 = false;
+    isDragging52 = false;
+    isDragging51 = false;
+    isDragging42 = false;
+    isDragging31 = false;
+    isDragging32 = false;
+    isDragging21 = false;
+    isDragging22 = false;
 });
 elementPage31.addEventListener('mousedown', (e) => {
     isDragging31 = true;
@@ -381,6 +451,20 @@ elementPage31.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove31 = true;
     e.preventDefault();
+
+    isDragging82 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging61 = false;
+    isDragging52 = false;
+    isDragging51 = false;
+    isDragging42 = false;
+    isDragging41 = false;
+    isDragging32 = false;
+    isDragging21 = false;
+    isDragging22 = false;
 });
 elementPage21.addEventListener('mousedown', (e) => {
     isDragging21 = true;
@@ -399,6 +483,20 @@ elementPage21.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove21 = true;
     e.preventDefault();
+
+    isDragging82 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging61 = false;
+    isDragging52 = false;
+    isDragging51 = false;
+    isDragging42 = false;
+    isDragging41 = false;
+    isDragging32 = false;
+    isDragging31 = false;
+    isDragging22 = false;
 });
 /*elementPage11.addEventListener('mousedown', (e) => {
     isDragging11 = true;
@@ -427,6 +525,20 @@ elementPage82.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove82 = true;
     e.preventDefault();
+
+    isDragging21 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging61 = false;
+    isDragging52 = false;
+    isDragging51 = false;
+    isDragging42 = false;
+    isDragging41 = false;
+    isDragging32 = false;
+    isDragging31 = false;
+    isDragging22 = false;
 });
 elementPage72.addEventListener('mousedown', (e) => {
     isDragging72 = true;
@@ -444,6 +556,20 @@ elementPage72.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove72 = true;
     e.preventDefault();
+
+    isDragging21 = false;
+    isDragging81 = false;
+    isDragging82 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging61 = false;
+    isDragging52 = false;
+    isDragging51 = false;
+    isDragging42 = false;
+    isDragging41 = false;
+    isDragging32 = false;
+    isDragging31 = false;
+    isDragging22 = false;
 });
 elementPage62.addEventListener('mousedown', (e) => {
     isDragging62 = true;
@@ -461,6 +587,20 @@ elementPage62.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove62 = true;
     e.preventDefault();
+
+    isDragging21 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging82 = false;
+    isDragging61 = false;
+    isDragging52 = false;
+    isDragging51 = false;
+    isDragging42 = false;
+    isDragging41 = false;
+    isDragging32 = false;
+    isDragging31 = false;
+    isDragging22 = false;
 });
 elementPage52.addEventListener('mousedown', (e) => {
     isDragging52 = true;
@@ -478,6 +618,20 @@ elementPage52.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer);
     mousemove52 = true;
     e.preventDefault();
+
+    isDragging21 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging61 = false;
+    isDragging82 = false;
+    isDragging51 = false;
+    isDragging42 = false;
+    isDragging41 = false;
+    isDragging32 = false;
+    isDragging31 = false;
+    isDragging22 = false;
 });
 elementPage42.addEventListener('mousedown', (e) => {
     isDragging42 = true;
@@ -495,6 +649,20 @@ elementPage42.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
     mousemove42 = true;
     e.preventDefault();
+
+    isDragging21 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging61 = false;
+    isDragging52 = false;
+    isDragging51 = false;
+    isDragging82 = false;
+    isDragging41 = false;
+    isDragging32 = false;
+    isDragging31 = false;
+    isDragging22 = false;
 });
 elementPage32.addEventListener('mousedown', (e) => {
     isDragging32 = true;
@@ -512,6 +680,20 @@ elementPage32.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
     mousemove32 = true;
     e.preventDefault();
+
+    isDragging21 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging61 = false;
+    isDragging52 = false;
+    isDragging51 = false;
+    isDragging42 = false;
+    isDragging41 = false;
+    isDragging82 = false;
+    isDragging31 = false;
+    isDragging22 = false;
 });
 elementPage22.addEventListener('mousedown', (e) => {
     isDragging22 = true;
@@ -529,6 +711,20 @@ elementPage22.addEventListener('touchstart', (e) => {
     clearInterval(autoTurnTimer); // Clear the auto-turn timer when starting a new drag
     mousemove22 = true;
     e.preventDefault();
+
+    isDragging21 = false;
+    isDragging81 = false;
+    isDragging72 = false;
+    isDragging71 = false;
+    isDragging62 = false;
+    isDragging61 = false;
+    isDragging52 = false;
+    isDragging51 = false;
+    isDragging42 = false;
+    isDragging41 = false;
+    isDragging32 = false;
+    isDragging31 = false;
+    isDragging82 = false;
 });
 /*elementPage12.addEventListener('mousedown', (e) => {
     isDragging12 = true;

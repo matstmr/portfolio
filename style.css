@@ -1582,7 +1582,7 @@ background: linear-gradient(173deg, rgba(242,242,242,1) 0%, rgba(93,135,78,1) 50
 		width: 0%;
 	}
 }
-
+/*
 @media screen and (max-width: 770px) and (orientation: landscape) {
 	.book {
 	  scale: 0.9;
@@ -1711,7 +1711,7 @@ background: linear-gradient(173deg, rgba(242,242,242,1) 0%, rgba(93,135,78,1) 50
 	.book.lecture {
 	  margin-left: 60px;
 	}
-  }
+  }*/
   
   @media screen and (max-height: 630px) and (orientation: landscape) {
 	.book {

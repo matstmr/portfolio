@@ -66,6 +66,7 @@ const hardCoverFront = document.querySelector('.hardcover_front');
 const hardCoverBack = document.querySelector('.hardcover_back');
 const book = document.querySelector('.book');
 const titreHardCoverFront = document.querySelector('.hardcover_front h1');
+const pHardCoverFront = document.querySelector('.hardcover_front p');
 
 //const page1 = document.querySelector('.page1')
 const page2 = document.querySelector('.page2');
@@ -93,6 +94,7 @@ hardCoverFront.addEventListener('click', () => {
             page7.style.transform = 'rotateY(-32deg) translateY(10px)';
             page8.style.transform = 'rotateY(-34deg) translateY(10px)';
             titreHardCoverFront.style.display = 'block';
+            pHardCoverFront.style.display = 'block';
         }, 100);
     } else {
         book.classList.add('lecture');
@@ -108,6 +110,7 @@ hardCoverFront.addEventListener('click', () => {
             page7.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
             page8.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
             titreHardCoverFront.style.display = 'none';
+            pHardCoverFront.style.display = 'none';
         }, 100);
     }
 });

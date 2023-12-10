@@ -263,7 +263,7 @@ a {
 	color: white;
 	font-size: 0.9em;
 	font-family: 'Bebas Neue', sans-serif;
-	display: none;
+	display: flex;
 }
 
 .hardcover_back {

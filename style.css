@@ -98,8 +98,7 @@ a {
 	z-index: 100;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+	overflow: hidden;
 }
 
 .hardcover_back {

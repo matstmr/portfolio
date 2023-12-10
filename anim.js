@@ -65,6 +65,7 @@ function lerp(a, b, t) {
 const hardCoverFront = document.querySelector('.hardcover_front');
 const hardCoverBack = document.querySelector('.hardcover_back');
 const book = document.querySelector('.book');
+const titreHardCoverFront = document.querySelector('.hardcover_front h1');
 
 //const page1 = document.querySelector('.page1')
 const page2 = document.querySelector('.page2');
@@ -79,7 +80,7 @@ const page8 = document.querySelector('.page8');
 hardCoverFront.addEventListener('click', () => {
 
     if (book.classList.contains('lecture')) {
-        book.classList.remove('lecture')
+        book.classList.remove('lecture');
         setTimeout(() => {
             hardCoverFront.style.transform = 'rotateY(-34deg) translateZ(8px)';
             hardCoverBack.style.transform = 'rotateY(-15deg) translateZ(-5px)';
@@ -91,6 +92,7 @@ hardCoverFront.addEventListener('click', () => {
             page6.style.transform = 'rotateY(-30deg) translateY(10px)';
             page7.style.transform = 'rotateY(-32deg) translateY(10px)';
             page8.style.transform = 'rotateY(-34deg) translateY(10px)';
+            titreHardCoverFront.style.display = 'block';
         }, 100);
     } else {
         book.classList.add('lecture');
@@ -105,6 +107,7 @@ hardCoverFront.addEventListener('click', () => {
             page6.style.transform = 'rotateY(0deg) translateZ(15px) translateX(18px) translateY(8px)';
             page7.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
             page8.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
+            titreHardCoverFront.style.display = 'none';
         }, 100);
     }
 });
@@ -5439,7 +5442,7 @@ const handleLienAvecImageClickPokemon = () => {
 // Ajoutez un écouteur d'événements pour le clic
 lienAvecImagePokemon.addEventListener('click', handleLienAvecImageClickPokemon);
 // Ajoutez un écouteur d'événements pour le toucher sur les écrans tactiles
-lienAvecImagePokemon.addEventListener('touchstart', (event) => {
+lienAvecImagePokemon.addEventListener('touchend', (event) => {
     event.stopPropagation();
     handleLienAvecImageClickPokemon()
 });

@@ -1803,3 +1803,23 @@ a {
 		margin-left: 140px;
 	}
 }
+
+@media screen and (max-height: 190px) and (orientation: landscape) {
+	.book {
+		scale: 0.25;
+	}
+
+	.book.lecture {
+		margin-left: 120px;
+	}
+}
+
+@media screen and (max-height: 145px) and (orientation: landscape) {
+	.book {
+		scale: 0.22;
+	}
+
+	.book.lecture {
+		margin-left: 100px;
+	}
+}

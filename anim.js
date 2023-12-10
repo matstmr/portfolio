@@ -111,7 +111,7 @@ hardCoverFront.addEventListener('click', () => {
             page7.style.transform = 'rotateY(0deg) translateZ(16px) translateX(16px) translateY(8px)';
             page8.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
             titreHardCoverFront.style.display = 'none';
-            pHardCoverFront.style.display = 'block';
+            pHardCoverFront.style.display = 'none';
         }, 100);
     }
 });
@@ -2473,7 +2473,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging31) {
-            const currentX = e.touches[0].clientX;
+            const currentX = e.clientX;
             const deltaX = currentX - initialX;
     
             page3.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
@@ -2557,7 +2557,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging32) {
-            const currentX = e.touches[0].clientX;
+            const currentX = e.clientX;
             const deltaX = currentX - initialX;
     
             page3.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-339px) translateY(8px)';
@@ -2625,7 +2625,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging21) {
-            const currentX = e.touches[0].clientX;
+            const currentX = e.clientX;
             const deltaX = currentX - initialX;
             page2.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
     
@@ -2697,7 +2697,7 @@ document.addEventListener('mousemove', (e) => {
         }
     
         if (isDragging22) {
-            const currentX = e.touches[0].clientX;
+            const currentX = e.clientX;
             const deltaX = currentX - initialX;
     
             page2.style.transform = 'rotateY(0deg) translateZ(17px) translateX(-341px) translateY(8px)';

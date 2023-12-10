@@ -263,7 +263,6 @@ a {
 	color: white;
 	font-size: 0.9em;
 	font-family: 'Bebas Neue', sans-serif;
-	display: none;
 }
 
 .hardcover_back {
@@ -1724,10 +1723,6 @@ a {
 
 	.book.lecture {
 		margin-left: 300px;
-	}
-
-	.hardcover_front p {
-		display: block;
 	}
 }
 

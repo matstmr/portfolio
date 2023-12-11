@@ -2660,7 +2660,7 @@ document.addEventListener('mousemove', (e) => {
             deltaX21 = totalDistance;
     
             if (deltaX21 > 200) {
-                page3.style.transform = 'rotateY(0deg) translateZ(16px) translateX(-333px) translateY(8px)';
+                page3.style.transform = 'rotateY(0deg) translateZ(15px) translateX(-333px) translateY(8px)';
                 page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(-335px) translateY(8px)';
                 page5.style.transform = 'rotateY(0deg) translateZ(13px) translateX(-337px) translateY(8px)';
                 page6.style.transform = 'rotateY(0deg) translateZ(12px) translateX(-339px) translateY(8px)';

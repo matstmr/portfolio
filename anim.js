@@ -5324,6 +5324,12 @@ document.addEventListener('touchend', () => {
                 elementPage21.style.transform = `translate3d(${translation}px, 0, 0)`;
                 elementPage22.style.transform = `translate3d(${-translation}px, 0, 0)`;
 
+                page3.style.transform = 'rotateY(0deg) translateZ(15px) translateX(-333px) translateY(8px)';
+                page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(-335px) translateY(8px)';
+                page5.style.transform = 'rotateY(0deg) translateZ(13px) translateX(-337px) translateY(8px)';
+                page6.style.transform = 'rotateY(0deg) translateZ(12px) translateX(-339px) translateY(8px)';
+                page7.style.transform = 'rotateY(0deg) translateZ(11px) translateX(-341px) translateY(8px)';
+                page8.style.transform = 'rotateY(0deg) translateZ(10px) translateX(-343px) translateY(8px)';
 
                 // Check if the total distance exceeds a certain value (adjust as needed)
                 if (totalDistance >= 345) {
@@ -5357,6 +5363,13 @@ document.addEventListener('touchend', () => {
                 elementPage21.style.transform = `translate3d(${translation}px, 0, 0)`;
                 elementPage22.style.transform = `translate3d(${-translation}px, 0, 0)`;
 
+                page3.style.transform = 'rotateY(0deg) translateZ(15px) translateX(-331px) translateY(8px)';
+                page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(-333px) translateY(8px)';
+                page5.style.transform = 'rotateY(0deg) translateZ(13px) translateX(-335px) translateY(8px)';
+                page6.style.transform = 'rotateY(0deg) translateZ(12px) translateX(-337px) translateY(8px)';
+                page7.style.transform = 'rotateY(0deg) translateZ(11px) translateX(-339px) translateY(8px)';
+                page8.style.transform = 'rotateY(0deg) translateZ(10px) translateX(-341px) translateY(8px)';
+                
                 // Check if the total distance exceeds a certain value (adjust as needed)
                 if (totalDistance <= -345) {
                     mask21.classList.add('right-mask-side');

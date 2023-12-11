@@ -2626,7 +2626,8 @@ document.addEventListener('mousemove', (e) => {
         if (isDragging21) {
             const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
-            page2.style.transform = 'rotateY(0deg) translateZ(20px) translateX(14px) translateY(8px)';
+
+            page2.style.transform = 'rotateY(0deg) translateZ(17px) translateX(14px) translateY(8px)';
     
             mask21.style.transform = 'translate3d(345px, 0px, 0px)';
             mask22.style.transform = 'translate3d(345px, 0px, 0px)';
@@ -2661,7 +2662,7 @@ document.addEventListener('mousemove', (e) => {
                 //elementPage32.style.transform = 'translate3d(-347px, 0, 0)';
     
                 //page1.style.transform = 'rotateY(0deg) translateZ(16px) translateX(14px) translateY(8px)';
-                page3.style.transform = 'rotateY(0deg) translateZ(15px) translateX(-333px) translateY(8px)';
+                page3.style.transform = 'rotateY(0deg) translateZ(14px) translateX(-333px) translateY(8px)';
                 page4.style.transform = 'rotateY(0deg) translateZ(14px) translateX(-335px) translateY(8px)';
                 page5.style.transform = 'rotateY(0deg) translateZ(13px) translateX(-337px) translateY(8px)';
                 page6.style.transform = 'rotateY(0deg) translateZ(12px) translateX(-339px) translateY(8px)';

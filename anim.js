@@ -2626,7 +2626,7 @@ document.addEventListener('mousemove', (e) => {
         if (isDragging21) {
             const currentX = e.touches[0].clientX;
             const deltaX = currentX - initialX;
-
+            console.log('bonjour');
             page2.style.transform = 'rotateY(0deg) translateZ(25px) translateX(14px) translateY(8px)';
     
             mask21.style.transform = 'translate3d(345px, 0px, 0px)';

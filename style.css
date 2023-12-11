@@ -675,6 +675,7 @@ a {
 	margin: 40px auto;
 	opacity: 0;
 	font-family: 'Gabarito';
+	text-align: justify;
 }
 
 #page-62 .objectif-pokemon,
@@ -683,6 +684,7 @@ a {
 	margin: 20px auto;
 	opacity: 0;
 	font-family: 'Gabarito';
+	text-align: justify;
 }
 
 .fade-in {

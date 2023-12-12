@@ -132,9 +132,9 @@ new Typewriter(txtAnim, {
     .deleteChars(3)
     .typeString('Javascript')
     .pauseFor(200)
-    .deleteChars(10)
-    .typeString('React, Node')
-    .pauseFor(200)
+    .deleteChars(21)
+    .typeString('\'apprends React, Node')
+    .pauseFor(250)
     .start();
 
 // ANIMATION DE LA CARTE D'ACCUEIL 

@@ -5348,12 +5348,10 @@ document.addEventListener('touchend', () => {
         } else {
             elementPage22.style.opacity = 0;
 
-            // Start the auto-turn timer
             autoTurnTimer = setInterval(() => {
                 // Bornes des valeurs
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
-                // Increment the total distance by a small amount (adjust as needed)
                 totalDistance -= 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 
@@ -5370,7 +5368,6 @@ document.addEventListener('touchend', () => {
                 page7.style.transform = 'rotateY(0deg) translateZ(11px) translateX(-339px) translateY(8px)';
                 page8.style.transform = 'rotateY(0deg) translateZ(10px) translateX(-341px) translateY(8px)';
                 
-                // Check if the total distance exceeds a certain value (adjust as needed)
                 if (totalDistance <= -345) {
                     mask21.classList.add('right-mask-side');
                     mask22.classList.add('right-mask-side');
@@ -5406,7 +5403,6 @@ document.addEventListener('touchend', () => {
                 // Bornes des valeurs
                 const maxTranslation = 345; // La valeur maximale de la translation
                 const minTranslation = 0;  // La valeur minimale de la translation
-                // Increment the total distance by a small amount (adjust as needed)
                 totalDistance += 6;
                 let translation = Math.min(maxTranslation, Math.max(minTranslation, totalDistance));
 

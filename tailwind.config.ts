@@ -25,6 +25,35 @@ const config: Config = {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",
       },
+      animation: {
+        "ping-fast": "ping-fast 0.5s ease-in-out infinite",
+        "move-word-left": "move-word-left 1s linear infinite",
+        "move-word-right": "move-word-right 1s linear infinite",
+      },
+      keyframes: {
+        "ping-fast": {
+          "75%, 100%": {
+            transform: "scale(2)",
+            opacity: "0",
+          },
+        },
+        "move-word-left": {
+          "0%": {
+            transform: "translateX(0%)",
+          },
+          "100%": {
+            transform: "translateX(-50%)",
+          },
+        },
+        "move-word-right": {
+          "0%": {
+            transform: "translateX(-50%)",
+          },
+          "100%": {
+            transform: "translateX(0%)",
+          },
+        },
+      },
     },
   },
   plugins: [],

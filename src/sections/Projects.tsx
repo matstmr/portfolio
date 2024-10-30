@@ -1,68 +1,72 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import perlImage from "@/assets/images/perl.png";
+import greenstep from "@/assets/images/greenstep.png";
+import pokedexImage from "@/assets/images/pokedex.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "PERL",
+    year: "2024",
+    title: "Application mobile sur l'e-sport",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Utilisation de React Native" },
+      { title: "Conception d'une base de données" },
+      { title: "Déploiement sur les store Apple et Google" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://iphone.apkpure.com/fr/app/perl-planet-esport/com.perl.perl",
+    image: perlImage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Wild Code School",
+    year: "2024",
+    title: "Green Step",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Utilisation de Next et de GraphQL" },
+      { title: "Méthode Agile / Scrum" },
+      {
+        title:
+          "Déploiement et Intégration continu avec Docker et Github Actions",
+      },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    image: greenstep,
   },
   {
-    company: "Quantum Dynamics",
+    company: "Mattéo Santamaria",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Pokédex Card",
     results: [
-      { title: "Enhanced user experience by 40%" },
+      { title: "Utilisation d'une API avec React" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://matstmr.github.io/pokedexcard/",
+    image: pokedexImage,
   },
 ];
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section id="project" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          title="Featured Projects"
-          eyebrow="Real-World Results"
-          description="See how I transformed concepts into engaging digital experiences."
+          title="Projets en vedette"
+          eyebrow="Résultats concrets"
+          description="Découvrez comment j'ai transformé des concepts en expériences numériques engageantes."
         />
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
+              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+              style={{
+                top: `calc(64px + ${projectIndex * 40}px`,
+              }}
             >
-              <div className="lg-grid lg:gris-cols lg:gap-16">
+              <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                     <span>{project.company}</span>
@@ -84,12 +88,20 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                      <span>Visit Live Site</span>
-                      <ArrowUpRightIcon className="size-4" />
-                    </button>
-                  </a>
+                  {project.link ? (
+                    <a href={project.link} target="_blank">
+                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                        <span>Visit Live Site</span>
+                        <ArrowUpRightIcon className="size-4" />
+                      </button>
+                    </a>
+                  ) : (
+                    <div className="opacity-0">
+                      <div className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                        <span></span>
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className="relative">
                   <Image

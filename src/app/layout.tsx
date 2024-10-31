@@ -25,13 +25,14 @@ export default function RootLayout({
       lang="en"
       style={{
         scrollBehavior: "smooth",
+        overflowX: "hidden",
       }}
     >
       <body
         className={twMerge(
           inter.variable,
           calistoga.variable,
-          "bg-gray-900 text-white antialisased font-sans overflow-x-hidden"
+          "bg-gray-900 text-white antialisased font-sans overflow-hidden"
         )}
       >
         {children}

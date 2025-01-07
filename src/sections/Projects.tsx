@@ -39,9 +39,8 @@ const portfolioProjects = [
     year: "2023",
     title: "Pokédex Card",
     results: [
-      { title: "Utilisation d'une API avec React" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Utilisation d'une API" },
+      { title: "Utilisation de React" },
     ],
     link: "https://matstmr.github.io/pokedexcard/",
     image: pokedexImage,
